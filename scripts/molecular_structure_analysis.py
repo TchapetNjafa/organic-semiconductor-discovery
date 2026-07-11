@@ -5,7 +5,7 @@ Molecular Structure Analysis and Visualization
 This script analyzes the chemical structures of top candidates and creates
 annotated molecular structure figures with functional group identification.
 
-Author: Analysis for Computational Materials Science submission
+Author: Analysis for the organic-semiconductor screening study (RSC Digital Discovery, Paper 1)
 Date: 2026-01-08
 """
 
@@ -22,7 +22,7 @@ from collections import Counter
 sns.set_style("whitegrid")
 plt.rcParams['figure.dpi'] = 300
 
-# Top 7 molecule IDs from the manuscript
+# The 7 molecule IDs with raw PCE_SAScore > 0 (NOTE: mostly artifacts/reactive; see README — only 1712 survives the validity+stability screen)
 TOP_MOLECULES = {
     977: 'Acceptor',
     1712: 'Acceptor',

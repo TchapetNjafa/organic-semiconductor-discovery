@@ -5,7 +5,7 @@ PCE_SAScore Sensitivity Analysis
 This script performs sensitivity analysis on the PCE_SAScore metric to validate
 the 1:1 weighting choice and assess robustness of candidate selection.
 
-Author: Analysis for Computational Materials Science submission
+Author: Analysis for the organic-semiconductor screening study (RSC Digital Discovery, Paper 1)
 Date: 2026-01-08
 """
 
@@ -23,7 +23,7 @@ plt.rcParams['font.size'] = 10
 def load_data():
     """Load the PubChemQC dataset with PCE and SAScore values"""
     # Use the main PCE dataset
-    file_path = 'DATASET/PCE_paper_GDB9.csv'
+    file_path = 'DATASET/dataset_pubchemqc_opv_17458.csv'
 
     try:
         df = pd.read_csv(file_path)

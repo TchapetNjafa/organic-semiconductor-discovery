@@ -51,7 +51,7 @@ print(f"Start time: {time.strftime('%Y-%m-%d %H:%M:%S')}")
 print("\nSECTION 1: Loading Data")
 print("-"*80)
 
-df_pce = pd.read_csv(DATASET_DIR / "PCE_paper_GDB9.csv")
+df_pce = pd.read_csv(DATASET_DIR / "dataset_pubchemqc_opv_17458.csv")
 df_candidates = pd.read_csv(DATASET_DIR / "predictions_molecules_cibles.csv")
 
 print(f"✓ Loaded PCE data: {len(df_pce)} molecules")

@@ -8,17 +8,26 @@ This document provides a detailed description of the computational workflow used
 
 ### Stage 1: Data Acquisition and Preprocessing
 
-**Input:** PubChemQC B3LYP/6-31G*//PM6 CHNOPSFClNaKMgCa500 dataset
+**Input:** PubChemQC B3LYP/6-31G\*//PM6 dataset, `CHNOPSFClNaKMgCa500` subset
+(Nakata & Maeda 2023, doi:10.1021/acs.jcim.3c00899). The subset name encodes its
+scope: molecules composed of C, H, N, O, P, S, F, Cl, Na, K, Mg, Ca with mass up
+to ~500 Da, provided as neutral closed-shell singlets.
 
 **Process:**
-1. Download molecular data from PubChemQC database
-2. Extract HOMO, LUMO, and energy gap values
-3. Filter molecules containing heteroatoms (C, H, N, O, P, S, F, Cl, Na, K, Mg, Ca)
-4. Total molecules processed: 17,458
+1. Download molecular data from the PubChemQC subset above.
+2. Extract HOMO, LUMO, and energy-gap values.
+3. Assemble the working set: neutral, closed-shell singlet molecules with
+   mass ≲ 500 Da. **No heteroatom requirement and no lower mass bound were
+   applied** — the working set includes heteroatom-free molecules (benzene,
+   methane, etc.). This permissive, chemistry-agnostic selection is deliberate;
+   Paper 1 shows it is part of why the raw metric surfaces artifacts.
+4. Total molecules in the working set: 17,458.
 
-**Output:** Structured dataset with quantum chemical descriptors
+**Output:** Structured dataset with quantum-chemical descriptors
+(`dataset_pubchemqc_opv_17458.csv`). Some original working notebooks/files use
+legacy `GDB9`/`qm9` naming — the data are PubChemQC, not GDB-9/QM9.
 
-**Notebook:** `MVOTO_EXTRACTION_GDB.ipynb`
+**Notebook:** `dataset_extraction.ipynb`
 
 ---
 
@@ -63,7 +72,7 @@ This document provides a detailed description of the computational workflow used
 - 17,334 potential donors (vs. PCBM)
 - 16 potential acceptors (vs. PCDTBT)
 
-**Notebook:** `PCE_GDB9.ipynb`
+**Notebook:** `scharber_pce_calculation.ipynb`
 
 ---
 
@@ -84,15 +93,37 @@ This document provides a detailed description of the computational workflow used
    ```
 
 3. **Filtering:**
-   - Retain only molecules with PCE_SAScore > 0
-   - Ensures balance between performance and feasibility
+   - Retain molecules with PCE_SAScore > 0
 
-**Output:** 
-- 3 viable donor molecules
-- 4 viable acceptor molecules
-- Total: 7 top candidates
+**Output (raw):**
+- 3 molecules positive as donors (vs. PCBM) + 4 positive as acceptors (vs. PCDTBT)
+- 7 unique molecules with PCE_SAScore > 0
+- **Caution:** this raw set is dominated by chemically implausible species and is
+  NOT a candidate list. It is filtered in Stage 3b.
 
-**Notebook:** `KAMENI2025.ipynb`
+**Notebook:** `screening_pce_sascore.ipynb`
+
+---
+
+### Stage 3b: Chemical-validity and stability screening (Paper 1)
+
+**Input:** the 7 raw molecules with PCE_SAScore > 0 (and the full ranking)
+
+**Process:**
+1. **Chemical-validity filter** (`filter_genuine_osc.py`): retain a molecule only
+   if it is a single covalent species (no salts/cocrystals), contains no metal,
+   has at least one aromatic ring, ≥6 heavy atoms, and ≥6 conjugated atoms.
+2. **Stability screen** (`stability_screen.py`): flag/remove reactive groups
+   (azide, nitroso, diazo) via SMARTS.
+
+**Output:**
+- Raw viable set (7) → chemically valid (4: 17851, 20778, 4550, 1712)
+  → stable (1: molecule 1712).
+- Removed as artifacts: molecular oxygen (977), magnesium carbonate (11029),
+  quinhydrone cocrystal (7801). Removed as reactive: azides 17851, 20778; nitroso 4550.
+
+**Scripts:** `paper1_opv_screening/scripts/filter_genuine_osc.py`,
+`stability_screen.py`
 
 ---
 
@@ -247,7 +278,7 @@ This document provides a detailed description of the computational workflow used
 - Visualization of chemical space
 - Structure-property relationships by cluster
 
-**Notebook:** `KAMENI2025.ipynb`
+**Notebook:** `screening_pce_sascore.ipynb`
 
 ---
 

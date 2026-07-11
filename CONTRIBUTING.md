@@ -4,7 +4,7 @@ Thank you for your interest in this project!
 
 ## About This Repository
 
-This repository contains the computational workflow and analysis code for a research article submitted to *Computational Materials Science*. The code is provided to ensure reproducibility and FAIR compliance.
+This repository contains the computational workflow and analysis code for a two-paper programme (RSC Digital Discovery; Sensors and Actuators B). The code is provided to ensure reproducibility and FAIR compliance.
 
 ## Questions and Collaborations
 
