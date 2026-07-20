@@ -2,7 +2,15 @@
 
 ## Overview
 
-This document provides a detailed description of the computational workflow used in the manuscript "Data-Driven Discovery of Synthetically Compatible Organic Semiconductors for Multifunctional Applications."
+This document provides a detailed description of the computational workflow used
+across the two-paper programme built on this deposit: Paper 1 (OPV screening,
+Stages 1-5, submitted to RSC Digital Discovery) and Paper 2 (biosensing
+two-axis evaluation, Stages 6-7, in preparation for the Journal of Chemical
+Information and Modeling).
+Stages 6 and 7 below describe the docking and TD-DFT protocols **actually used
+in Paper 2**; an earlier six-target/TADF-OLED docking plan was explored and
+abandoned (see `paper2_biosensing_screening/DOCKING_METHODS_NOTE.md` and
+`TDDFT_METHODS_NOTE.md` for the full protocol and the reasons for the change).
 
 ## Workflow Stages
 
@@ -186,67 +194,99 @@ legacy `GDB9`/`qm9` naming — the data are PubChemQC, not GDB-9/QM9.
 
 ---
 
-### Stage 6: Molecular Docking Simulations
+### Stage 6: Molecular Docking Simulations (Paper 2, as actually run)
 
-**Input:** Top candidates with PCE_SAScore > 0
+**Input:** The four Paper-1 chemical-validity-filter survivors (1712, 17851,
+20778, 4550) — no new candidate selection was performed for Paper 2.
 
 **Process:**
 
-1. **Protein Target Selection:**
-   - HIV-1 protease (PDB: 1HVR)
-   - Proteasome (PDB: 5LF3)
-   - SARS-CoV-2 M^pro (PDB: 6LU7)
-   - Aromatase (PDB: 3EQM)
-   - Thymidine kinase (PDB: 1KIM)
-   - Dihydrofolate reductase (PDB: 1RX2)
-
-2. **Ligand Preparation:**
-   - Convert SMILES to 3D structures using RDKit
-   - Energy minimization with UFF force field
-   - Convert to PDBQT format for AutoDock Vina
-
-3. **Receptor Preparation:**
-   - Download PDB structures
-   - Remove water molecules and heteroatoms
-   - Add polar hydrogens
-   - Define binding box around active site
-
-4. **Docking:**
-   - AutoDock Vina with exhaustiveness = 8
-   - Generate 9 binding poses per ligand
-   - Extract best binding affinity (kcal/mol)
+1. **Protein target selection:** whole-protein blind docking (no assumed
+   active site) against four structurally distinct targets: HIV-1 protease
+   (PDB 1DMP), Hsp90 (2XJX), a neurodegenerative-disease target (1SYH), and
+   the SARS-CoV-2 main protease (6Y2F). Targets were chosen to sample distinct
+   binding environments, not to represent a single disease hypothesis.
+2. **Ligand preparation:** RDKit `ETKDGv3` embedding (`randomSeed=42`) + UFF
+   optimization on the reused B3LYP/6-31G* geometries, converted to PDBQT in a
+   single Open Babel pass (Gasteiger charges); no second 3D-embedding step, so
+   the seeded conformer is preserved.
+3. **Receptor preparation:** prepared PDBQT files used as provided; search box
+   defined from each receptor's heavy-atom bounding box plus 8 Å padding
+   (rigid receptor, no induced fit).
+4. **Docking:** `smina` (AutoDock Vina 1.1.2 fork), fixed seed = 42,
+   exhaustiveness = 32, nine output modes; best-scoring mode reported per pair.
+   Two independent runs reproduced all twenty-eight ligand-target affinities
+   bit-identically.
 
 **Output:**
-- Binding affinity matrix (7 molecules × 6 targets)
-- Docking poses and interaction profiles
-- Molecular recognition capabilities assessment
+- Best-mode affinity matrix (7 molecules × 4 targets, 28 pairs). Docking separates
+  the set by stability class: all four stable donors (1712, 9168, 17574, 18506)
+  bind within the native-inhibitor range ($-6.4$ to $-8.0$ kcal/mol, the
+  all-carbon aromatic 9168 strongest); the three reactive structures (4550,
+  17851, 20778) bind more weakly ($-4.2$ to $-6.4$ kcal/mol).
+- **Reference-ligand calibration:** each target's native co-crystal ligand was
+  redocked under the identical protocol (`calibrate_reference_ligands.py`),
+  giving a known-inhibitor band of $-5.5$ to $-7.7$ kcal/mol. The blind search
+  does not recover the crystallographic poses (RMSD 16–34 Å), so affinities are
+  a coarse, relative binding-potential scale, not site-specific predictions.
 
-**Notebook:** `docking_all_targets_with_download.ipynb`
+**Scripts:** `paper2_biosensing_screening/scripts/redock_candidates.py` (original
+four), `dock_new_candidates.py` (three added stable donors, identical protocol),
+`calibrate_reference_ligands.py` (native-ligand calibration).
+Full protocol and limitations: `paper2_biosensing_screening/DOCKING_METHODS_NOTE.md`.
+
+> An earlier six-target plan (HIV-1 protease 1HVR, Proteasome 5LF3, SARS-CoV-2
+> M$^{\mathrm{pro}}$ 6LU7, aromatase, thymidine kinase, DHFR; exhaustiveness=8)
+> was explored and abandoned: the Proteasome target (7PG9) proved intractable
+> for whole-protein docking at ~45,000 atoms, and two receptor conversions
+> (4LDE, 5JWA) failed. The four-target protocol above is the one used in the
+> manuscript.
 
 ---
 
-### Stage 7: TDDFT Calculations (Optional)
+### Stage 7: TD-DFT Solvatochromic Shift (Paper 2, as actually run)
 
-**Input:** Top candidates
+**Input:** All seven candidates. The four original molecules reuse their
+Paper-1 B3LYP/6-31G* geometries; the three added stable donors (17574, 18506,
+9168) were geometry-optimized at the same B3LYP/6-31G* level
+(`optimize_new_geometries.py`) so all seven share a common footing.
 
 **Process:**
 
-1. **Excited State Calculations:**
-   - Time-dependent DFT (TDDFT)
-   - B3LYP/6-31G* level of theory
-   - Calculate first 10 excited states
-
-2. **Properties Extracted:**
-   - Singlet-triplet gap (ΔE_ST)
-   - Oscillator strength (f)
-   - Excited state lifetime (τ)
+1. **Excited-state method:** TDA-TD-DFT (Tamm-Dancoff approximation), eight
+   lowest singlet roots, computed with ORCA. Full linear-response TD-DFT was
+   attempted first but failed to run reliably (CIS module instability on a
+   converged reference); TDA was used throughout as the more stable choice.
+2. **Functionals:** B3LYP/6-31G* (matches the Paper-1 screening level) and
+   CAM-B3LYP/6-31G* as a range-separated cross-check, since global hybrids are
+   known to underestimate charge-transfer excited-state energies.
+3. **Environment:** CPCM implicit solvent, two solvents per molecule —
+   toluene (nonpolar, organic-blend proxy) and water (polar, aqueous-biosensing
+   proxy).
+4. **Solvatochromic descriptor:** $\Delta E_{S_1} = E_{S_1}(\text{water}) -
+   E_{S_1}(\text{toluene})$, computed at both functional levels.
 
 **Output:**
-- Fluorescence properties
-- OLED suitability assessment
-- TADF potential identification
+- Molecule 1712 (low dipole, 2.56 D): shift within numerical noise and changes
+  sign between functionals (+0.006 eV B3LYP, -0.071 eV CAM-B3LYP) — direction
+  not resolved, magnitude far smaller than the other three.
+- The three high-dipole molecules (7.42-9.74 D): large, same-sign shifts under
+  both functionals (e.g. 20778: +0.58 eV B3LYP, +1.10 eV CAM-B3LYP).
+- **Caveat:** under CAM-B3LYP the tracked S$_1$ state is nearly oscillator-dark
+  for 17851 and 20778 ($f \sim 10^{-5}$-$10^{-6}$), which bears on how directly
+  the shift could be exploited as an absorption-based optical readout.
 
-**Notebook:** `xtb_crest_validation_report.ipynb`
+**Script:** `paper2_biosensing_screening/scripts/run_tddft_scan.py`. Full
+eight-state tables: `paper2_biosensing_screening/data/solvatochromic_results_*.csv`
+and `tab_S1_absorption_states.tex`. Raw ORCA output (146 MB) is archived
+separately as `paper2_biosensing_screening/raw_tddft_output_B3LYP_CAMB3LYP.zip`
+in the Zenodo deposit (not included in the GitHub copy of this folder). Full
+protocol: `paper2_biosensing_screening/TDDFT_METHODS_NOTE.md`.
+
+> An earlier plan targeted TADF/OLED photophysics (singlet-triplet gap,
+> excited-state lifetime). This was abandoned: no experimental or computed
+> S$_1$/T$_1$ data existed for the real candidate set to support that framing.
+> The solvatochromic-shift protocol above is the one used in the manuscript.
 
 ---
 

@@ -1,0 +1,34 @@
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_JCIM/docking_rerun/ligands/9168.pdb
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C1  UNL     1      -6.093   1.042   1.563  0.00  0.00    +0.001 A 
+ATOM      2  C2  UNL     1      -6.739  -0.012   0.926  0.00  0.00    +0.001 A 
+ATOM      3  C3  UNL     1      -6.002  -0.931   0.186  0.00  0.00    +0.008 A 
+ATOM      4  C4  UNL     1      -4.607  -0.802   0.076  0.00  0.00    -0.017 A 
+ATOM      5  C5  UNL     1      -3.926   0.265   0.717  0.00  0.00    -0.010 A 
+ATOM      6  C6  UNL     1      -4.707   1.186   1.465  0.00  0.00    +0.009 A 
+ATOM      7  C7  UNL     1      -2.501   0.365   0.583  0.00  0.00    -0.010 A 
+ATOM      8  C8  UNL     1      -1.773   1.399   1.195  0.00  0.00    +0.010 A 
+ATOM      9  C9  UNL     1      -0.397   1.499   1.067  0.00  0.00    +0.010 A 
+ATOM     10  C10 UNL     1       0.352   0.570   0.318  0.00  0.00    -0.010 A 
+ATOM     11  C11 UNL     1      -0.352  -0.496  -0.318  0.00  0.00    -0.010 A 
+ATOM     12  C12 UNL     1      -1.782  -0.601  -0.187  0.00  0.00    -0.010 A 
+ATOM     13  C13 UNL     1      -2.519  -1.642  -0.802  0.00  0.00    +0.010 A 
+ATOM     14  C14 UNL     1      -3.897  -1.736  -0.670  0.00  0.00    +0.009 A 
+ATOM     15  C15 UNL     1       0.397  -1.425  -1.067  0.00  0.00    +0.010 A 
+ATOM     16  C16 UNL     1       1.773  -1.326  -1.195  0.00  0.00    +0.010 A 
+ATOM     17  C17 UNL     1       2.501  -0.291  -0.583  0.00  0.00    -0.010 A 
+ATOM     18  C18 UNL     1       1.782   0.675   0.187  0.00  0.00    -0.010 A 
+ATOM     19  C19 UNL     1       2.519   1.716   0.802  0.00  0.00    +0.010 A 
+ATOM     20  C20 UNL     1       3.897   1.810   0.670  0.00  0.00    +0.009 A 
+ATOM     21  C21 UNL     1       4.607   0.876  -0.076  0.00  0.00    -0.017 A 
+ATOM     22  C22 UNL     1       3.926  -0.192  -0.717  0.00  0.00    -0.010 A 
+ATOM     23  C23 UNL     1       4.707  -1.112  -1.465  0.00  0.00    +0.009 A 
+ATOM     24  C24 UNL     1       6.093  -0.969  -1.563  0.00  0.00    +0.001 A 
+ATOM     25  C25 UNL     1       6.739   0.086  -0.926  0.00  0.00    +0.001 A 
+ATOM     26  C26 UNL     1       6.002   1.005  -0.186  0.00  0.00    +0.008 A 
+ENDROOT
+TORSDOF 0

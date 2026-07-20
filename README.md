@@ -1,6 +1,6 @@
 # Organic Semiconductor Discovery
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18201813.svg)](https://doi.org/10.5281/zenodo.18201813)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18201812.svg)](https://doi.org/10.5281/zenodo.18201812)
 [![Code: MIT](https://img.shields.io/badge/Code-MIT-blue.svg)](LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
@@ -10,8 +10,11 @@ PubChemQC database.
 - **Paper 1 (organic photovoltaics):** *Efficiency and Accessibility Are Not
   Enough: Chemical-Validity Filtering in High-Throughput Screening of Organic
   Photovoltaic Materials* — submitted to **RSC Digital Discovery**.
-- **Paper 2 (biosensing / multifunctional):** in preparation for **Sensors and
-  Actuators B: Chemical**, using the same dataset and the docking analyses here.
+- **Paper 2 (biosensing / multifunctional):** *Predicted Protein Binding and
+  Optical Environment-Sensitivity Select Different Subsets of
+  Organic-Semiconductor Candidates: A Multi-Objective Computational Evaluation* —
+  in preparation for the **Journal of Chemical Information and Modeling** (ACS),
+  evaluating seven candidates on two independent axes.
 
 ---
 
@@ -41,6 +44,32 @@ sets is itself a result.
 > Note: earlier versions of this repository presented a "top 7 candidates for
 > synthesis" narrative and some uncorrected statistics (e.g. reorganization
 > energies with a ~0.35 eV mean). Those are **superseded** by the results above.
+
+---
+
+## What Paper 2 shows
+
+Seven candidates — the four admitted by the Paper-1 validity filter (stable donor
+`1712` + reactive foils `17851`, `20778`, `4550`) plus three further stable donors
+(`17574`, `18506`, `9168`) added on a distinct stability axis — are evaluated on
+two independent axes. **Whole-protein blind docking** (smina, seed 42,
+exhaustiveness 32) against four structurally distinct targets — HIV-1 protease
+(1DMP), Hsp90 (2XJX), a neurodegenerative target (1SYH), SARS-CoV-2 main protease
+(6Y2F) — separates the set by stability class: all four stable donors bind within
+the native-inhibitor range ($-6.4$ to $-8.0$ kcal/mol, all-carbon aromatic `9168`
+strongest); the three reactive structures bind weaker ($-4.2$ to $-6.4$ kcal/mol).
+**TD-DFT solvatochromic shift** (TDA-TD-DFT, B3LYP + CAM-B3LYP/6-31G*, CPCM
+toluene vs. water) gives an unrelated ranking: the stable donors barely move with
+solvent polarity, while a large shift appears only in the reactive high-dipole
+structures — and there in optically dark transitions. The two readouts select
+different subsets and are reported side by side, not merged.
+
+A **reference-ligand calibration** (native co-crystal ligands redocked under the
+same protocol) places the stable donors within the $-5.5$ to $-7.7$ kcal/mol
+known-inhibitor band; the blind search does not recover crystallographic poses
+(RMSD 16–34 Å), so affinities are a coarse relative scale, not site-specific. See
+`paper2_biosensing_screening/` for the full protocol and results; the raw ORCA
+output is on the Zenodo deposit only.
 
 ---
 
@@ -74,6 +103,18 @@ organic-semiconductor-discovery/
 │   ├── data/                            # genuine_osc_ranked, viable_view_a/b
 │   └── figures/                         # the 8 manuscript figures (PDF + PNG)
 │
+├── paper2_biosensing_screening/        # CURRENT Paper-2 material
+│   ├── scripts/
+│   │   ├── redock_candidates.py         # whole-protein blind docking (smina)
+│   │   ├── run_tddft_scan.py            # TD-DFT solvatochromic scan (ORCA)
+│   │   ├── render_pose.py, crop_pose.py # docking-pose figure
+│   │   ├── generate_figures{,2}.py, make_si_table.py, figstyle_p2.py
+│   ├── data/                            # docking + solvatochromic result CSVs, geometries
+│   ├── figures/                         # the 7 manuscript figures (PDF + PNG)
+│   ├── docking_outputs/                 # ligands, per-mode logs, docked poses
+│   └── {DOCKING,TDDFT}_METHODS_NOTE.md  # full protocols
+│       # raw ORCA output (145 MB) is on the Zenodo deposit only
+│
 ├── notebooks/
 │   ├── screening_pce_sascore.ipynb      # screening + PCE_SAScore workflow
 │   └── scharber_pce_calculation.ipynb   # Scharber PCE calculation
@@ -102,6 +143,11 @@ python stability_screen.py         # -> data/viable_view_a/b_*.csv
 
 # regenerate the manuscript figures
 python generate_fig2_scatter.py    # etc.
+
+# reproduce the Paper-2 docking + TD-DFT results
+cd ../../paper2_biosensing_screening/scripts
+python redock_candidates.py        # -> ../data/docking_results_clean.csv
+python run_tddft_scan.py           # -> ../data/solvatochromic_results_*.csv
 ```
 
 ---

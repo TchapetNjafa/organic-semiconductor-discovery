@@ -1,0 +1,585 @@
+MODEL 1
+REMARK minimizedAffinity -7.73711729
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_JCIM/docking_rerun/calibration_outputs/2XJX_XJX_native.pdb
+REMARK  9 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C3_3
+REMARK    3  A    between atoms: C2_2  and  C4_4
+REMARK    4  A    between atoms: C6_6  and  C7_7
+REMARK    5  A    between atoms: C14_14  and  C15_15
+REMARK    6  A    between atoms: C15_15  and  N16_16
+REMARK    7  A    between atoms: N20_19  and  C22_20
+REMARK    8  A    between atoms: C28_26  and  O29_27
+REMARK    9  A    between atoms: C31_29  and  O32_30
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C7  XJX A1232      11.953 -20.776  -0.607  0.00  0.00    +0.268 C 
+ATOM      2  O8  XJX A1232      11.721 -21.615  -1.454  0.00  0.00    -0.267 OA
+ATOM      3  N9  XJX A1232      12.296 -19.520  -0.926  0.00  0.00    -0.272 N 
+ATOM      4  C10 XJX A1232      12.325 -19.020  -2.308  0.00  0.00    +0.083 A 
+ATOM      5  C11 XJX A1232      12.333 -17.530  -2.110  0.00  0.00    +0.019 A 
+ATOM      6  C12 XJX A1232      12.273 -16.519  -3.061  0.00  0.00    +0.001 A 
+ATOM      7  C13 XJX A1232      12.301 -15.193  -2.665  0.00  0.00    -0.003 A 
+ATOM      8  C14 XJX A1232      12.392 -14.860  -1.316  0.00  0.00    -0.006 A 
+ATOM      9  C25 XJX A1232      12.450 -15.889  -0.380  0.00  0.00    -0.001 A 
+ATOM     10  C26 XJX A1232      12.415 -17.213  -0.780  0.00  0.00    +0.019 A 
+ATOM     11  C27 XJX A1232      12.502 -18.454   0.066  0.00  0.00    +0.083 A 
+ENDROOT
+BRANCH   1  14
+ATOM     12  C4  XJX A1232      13.160 -21.908   2.801  0.00  0.00    +0.017 A 
+ATOM     13  C5  XJX A1232      13.125 -21.569   1.449  0.00  0.00    +0.007 A 
+ATOM     14  C6  XJX A1232      11.942 -21.155   0.833  0.00  0.00    +0.095 A 
+ATOM     15  C28 XJX A1232      10.769 -21.092   1.564  0.00  0.00    +0.203 A 
+ATOM     16  C30 XJX A1232      10.769 -21.456   2.910  0.00  0.00    +0.084 A 
+ATOM     17  C31 XJX A1232      11.943 -21.870   3.519  0.00  0.00    +0.195 A 
+BRANCH  12  19
+ATOM     18  C1  XJX A1232      14.857 -23.771   2.803  0.00  0.00    +0.005 C 
+ATOM     19  C2  XJX A1232      14.434 -22.448   3.451  0.00  0.00    +0.025 C 
+ATOM     20  C3  XJX A1232      15.592 -21.456   3.437  0.00  0.00    +0.005 C 
+ENDBRANCH  12  19
+BRANCH  15  21
+ATOM     21  O29 XJX A1232       9.612 -20.689   0.949  0.00  0.00    -0.286 OA
+ATOM     22  H   XJX A1232       9.622 -20.447   0.044  0.00  0.00    +0.000 HD
+ENDBRANCH  15  21
+BRANCH  17  23
+ATOM     23  O32 XJX A1232      11.897 -22.190   4.847  0.00  0.00    -0.287 OA
+ATOM     24  H   XJX A1232      12.674 -22.474   5.288  0.00  0.00    +0.000 HD
+ENDBRANCH  17  23
+ENDBRANCH   1  14
+BRANCH   8  25
+ATOM     25  C15 XJX A1232      12.445 -13.417  -0.877  0.00  0.00    +0.099 C 
+BRANCH  25  26
+ATOM     26  N16 XJX A1232      13.490 -12.624  -1.623  0.00  0.00    -0.267 NA
+ATOM     27  C18 XJX A1232      12.867 -11.516  -2.420  0.00  0.00    +0.090 C 
+ATOM     28  C19 XJX A1232      13.921 -10.703  -3.158  0.00  0.00    +0.090 C 
+ATOM     29  N20 XJX A1232      14.909 -10.153  -2.182  0.00  0.00    -0.269 NA
+ATOM     30  C22 XJX A1232      15.908  -9.268  -2.851  0.00  0.00    +0.090 C 
+ATOM     31  C23 XJX A1232      15.572 -11.271  -1.443  0.00  0.00    +0.090 C 
+ATOM     32  C24 XJX A1232      14.529 -12.080  -0.688  0.00  0.00    +0.090 C 
+ENDBRANCH  25  26
+ENDBRANCH   8  25
+TORSDOF 6
+ENDMDL
+MODEL 2
+REMARK minimizedAffinity -7.08853531
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_JCIM/docking_rerun/calibration_outputs/2XJX_XJX_native.pdb
+REMARK  9 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C3_3
+REMARK    3  A    between atoms: C2_2  and  C4_4
+REMARK    4  A    between atoms: C6_6  and  C7_7
+REMARK    5  A    between atoms: C14_14  and  C15_15
+REMARK    6  A    between atoms: C15_15  and  N16_16
+REMARK    7  A    between atoms: N20_19  and  C22_20
+REMARK    8  A    between atoms: C28_26  and  O29_27
+REMARK    9  A    between atoms: C31_29  and  O32_30
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C7  XJX A1232       2.258 -16.333  24.065  0.00  0.00    +0.268 C 
+ATOM      2  O8  XJX A1232       2.367 -17.140  23.164  0.00  0.00    -0.267 OA
+ATOM      3  N9  XJX A1232       3.289 -16.009  24.859  0.00  0.00    -0.272 N 
+ATOM      4  C10 XJX A1232       4.653 -16.515  24.652  0.00  0.00    +0.083 A 
+ATOM      5  C11 XJX A1232       5.477 -15.567  25.479  0.00  0.00    +0.019 A 
+ATOM      6  C12 XJX A1232       6.858 -15.489  25.609  0.00  0.00    +0.001 A 
+ATOM      7  C13 XJX A1232       7.422 -14.536  26.437  0.00  0.00    -0.003 A 
+ATOM      8  C14 XJX A1232       6.617 -13.650  27.147  0.00  0.00    -0.006 A 
+ATOM      9  C25 XJX A1232       5.236 -13.743  27.000  0.00  0.00    -0.001 A 
+ATOM     10  C26 XJX A1232       4.675 -14.695  26.166  0.00  0.00    +0.019 A 
+ATOM     11  C27 XJX A1232       3.221 -14.977  25.904  0.00  0.00    +0.083 A 
+ENDROOT
+BRANCH   1  14
+ATOM     12  C4  XJX A1232      -0.945 -15.484  25.902  0.00  0.00    +0.017 A 
+ATOM     13  C5  XJX A1232       0.290 -16.042  25.573  0.00  0.00    +0.007 A 
+ATOM     14  C6  XJX A1232       0.927 -15.737  24.368  0.00  0.00    +0.095 A 
+ATOM     15  C28 XJX A1232       0.325 -14.878  23.466  0.00  0.00    +0.203 A 
+ATOM     16  C30 XJX A1232      -0.925 -14.331  23.757  0.00  0.00    +0.084 A 
+ATOM     17  C31 XJX A1232      -1.558 -14.638  24.950  0.00  0.00    +0.195 A 
+BRANCH  12  19
+ATOM     18  C1  XJX A1232      -2.531 -17.145  26.940  0.00  0.00    +0.005 C 
+ATOM     19  C2  XJX A1232      -1.684 -15.890  27.178  0.00  0.00    +0.025 C 
+ATOM     20  C3  XJX A1232      -0.763 -16.090  28.376  0.00  0.00    +0.005 C 
+ENDBRANCH  12  19
+BRANCH  15  21
+ATOM     21  O29 XJX A1232       0.957 -14.588  22.284  0.00  0.00    -0.286 OA
+ATOM     22  H   XJX A1232       1.796 -14.961  22.098  0.00  0.00    +0.000 HD
+ENDBRANCH  15  21
+BRANCH  17  23
+ATOM     23  O32 XJX A1232      -2.769 -14.055  25.201  0.00  0.00    -0.287 OA
+ATOM     24  H   XJX A1232      -3.223 -14.241  25.999  0.00  0.00    +0.000 HD
+ENDBRANCH  17  23
+ENDBRANCH   1  14
+BRANCH   8  25
+ATOM     25  C15 XJX A1232       7.224 -12.620  28.068  0.00  0.00    +0.099 C 
+BRANCH  25  26
+ATOM     26  N16 XJX A1232       6.481 -12.508  29.378  0.00  0.00    -0.267 NA
+ATOM     27  C18 XJX A1232       6.946 -13.545  30.358  0.00  0.00    +0.090 C 
+ATOM     28  C19 XJX A1232       6.212 -13.423  31.685  0.00  0.00    +0.090 C 
+ATOM     29  N20 XJX A1232       6.406 -12.051  32.244  0.00  0.00    -0.269 NA
+ATOM     30  C22 XJX A1232       5.783 -11.914  33.594  0.00  0.00    +0.090 C 
+ATOM     31  C23 XJX A1232       5.877 -11.031  31.288  0.00  0.00    +0.090 C 
+ATOM     32  C24 XJX A1232       6.616 -11.133  29.963  0.00  0.00    +0.090 C 
+ENDBRANCH  25  26
+ENDBRANCH   8  25
+TORSDOF 6
+ENDMDL
+MODEL 3
+REMARK minimizedAffinity -6.8895874
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_JCIM/docking_rerun/calibration_outputs/2XJX_XJX_native.pdb
+REMARK  9 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C3_3
+REMARK    3  A    between atoms: C2_2  and  C4_4
+REMARK    4  A    between atoms: C6_6  and  C7_7
+REMARK    5  A    between atoms: C14_14  and  C15_15
+REMARK    6  A    between atoms: C15_15  and  N16_16
+REMARK    7  A    between atoms: N20_19  and  C22_20
+REMARK    8  A    between atoms: C28_26  and  O29_27
+REMARK    9  A    between atoms: C31_29  and  O32_30
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C7  XJX A1232      13.470 -23.912   5.394  0.00  0.00    +0.268 C 
+ATOM      2  O8  XJX A1232      12.709 -24.209   6.293  0.00  0.00    -0.267 OA
+ATOM      3  N9  XJX A1232      13.042 -23.339   4.260  0.00  0.00    -0.272 N 
+ATOM      4  C10 XJX A1232      11.648 -22.926   4.043  0.00  0.00    +0.083 A 
+ATOM      5  C11 XJX A1232      11.768 -21.988   2.875  0.00  0.00    +0.019 A 
+ATOM      6  C12 XJX A1232      10.787 -21.214   2.268  0.00  0.00    +0.001 A 
+ATOM      7  C13 XJX A1232      11.107 -20.413   1.187  0.00  0.00    -0.003 A 
+ATOM      8  C14 XJX A1232      12.409 -20.377   0.696  0.00  0.00    -0.006 A 
+ATOM      9  C25 XJX A1232      13.377 -21.158   1.320  0.00  0.00    -0.001 A 
+ATOM     10  C26 XJX A1232      13.054 -21.954   2.405  0.00  0.00    +0.019 A 
+ATOM     11  C27 XJX A1232      13.938 -22.887   3.185  0.00  0.00    +0.083 A 
+ENDROOT
+BRANCH   1  14
+ATOM     12  C4  XJX A1232      16.804 -25.572   4.700  0.00  0.00    +0.017 A 
+ATOM     13  C5  XJX A1232      15.453 -25.233   4.649  0.00  0.00    +0.007 A 
+ATOM     14  C6  XJX A1232      14.913 -24.265   5.498  0.00  0.00    +0.095 A 
+ATOM     15  C28 XJX A1232      15.721 -23.633   6.427  0.00  0.00    +0.203 A 
+ATOM     16  C30 XJX A1232      17.070 -23.975   6.520  0.00  0.00    +0.084 A 
+ATOM     17  C31 XJX A1232      17.603 -24.940   5.680  0.00  0.00    +0.195 A 
+BRANCH  12  19
+ATOM     18  C1  XJX A1232      17.055 -28.067   4.442  0.00  0.00    +0.005 C 
+ATOM     19  C2  XJX A1232      17.374 -26.696   3.834  0.00  0.00    +0.025 C 
+ATOM     20  C3  XJX A1232      16.911 -26.639   2.382  0.00  0.00    +0.005 C 
+ENDBRANCH  12  19
+BRANCH  15  21
+ATOM     21  O29 XJX A1232      15.181 -22.687   7.259  0.00  0.00    -0.286 OA
+ATOM     22  H   XJX A1232      14.273 -22.464   7.188  0.00  0.00    +0.000 HD
+ENDBRANCH  15  21
+BRANCH  17  23
+ATOM     23  O32 XJX A1232      18.936 -25.221   5.793  0.00  0.00    -0.287 OA
+ATOM     24  H   XJX A1232      19.328 -25.867   5.239  0.00  0.00    +0.000 HD
+ENDBRANCH  17  23
+ENDBRANCH   1  14
+BRANCH   8  25
+ATOM     25  C15 XJX A1232      12.764 -19.522  -0.496  0.00  0.00    +0.099 C 
+BRANCH  25  26
+ATOM     26  N16 XJX A1232      12.268 -18.103  -0.357  0.00  0.00    -0.267 NA
+ATOM     27  C18 XJX A1232      13.387 -17.168  -0.001  0.00  0.00    +0.090 C 
+ATOM     28  C19 XJX A1232      12.893 -15.733   0.122  0.00  0.00    +0.090 C 
+ATOM     29  N20 XJX A1232      12.245 -15.312  -1.157  0.00  0.00    -0.269 NA
+ATOM     30  C22 XJX A1232      11.831 -13.878  -1.117  0.00  0.00    +0.090 C 
+ATOM     31  C23 XJX A1232      11.090 -16.209  -1.465  0.00  0.00    +0.090 C 
+ATOM     32  C24 XJX A1232      11.575 -17.644  -1.606  0.00  0.00    +0.090 C 
+ENDBRANCH  25  26
+ENDBRANCH   8  25
+TORSDOF 6
+ENDMDL
+MODEL 4
+REMARK minimizedAffinity -6.86039257
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_JCIM/docking_rerun/calibration_outputs/2XJX_XJX_native.pdb
+REMARK  9 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C3_3
+REMARK    3  A    between atoms: C2_2  and  C4_4
+REMARK    4  A    between atoms: C6_6  and  C7_7
+REMARK    5  A    between atoms: C14_14  and  C15_15
+REMARK    6  A    between atoms: C15_15  and  N16_16
+REMARK    7  A    between atoms: N20_19  and  C22_20
+REMARK    8  A    between atoms: C28_26  and  O29_27
+REMARK    9  A    between atoms: C31_29  and  O32_30
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C7  XJX A1232      12.051 -21.016  -0.569  0.00  0.00    +0.268 C 
+ATOM      2  O8  XJX A1232      11.893 -21.905  -1.381  0.00  0.00    -0.267 OA
+ATOM      3  N9  XJX A1232      12.358 -19.763  -0.937  0.00  0.00    -0.272 N 
+ATOM      4  C10 XJX A1232      12.430 -19.332  -2.341  0.00  0.00    +0.083 A 
+ATOM      5  C11 XJX A1232      12.368 -17.835  -2.220  0.00  0.00    +0.019 A 
+ATOM      6  C12 XJX A1232      12.311 -16.876  -3.224  0.00  0.00    +0.001 A 
+ATOM      7  C13 XJX A1232      12.267 -15.533  -2.897  0.00  0.00    -0.003 A 
+ATOM      8  C14 XJX A1232      12.282 -15.129  -1.565  0.00  0.00    -0.006 A 
+ATOM      9  C25 XJX A1232      12.337 -16.106  -0.575  0.00  0.00    -0.001 A 
+ATOM     10  C26 XJX A1232      12.376 -17.449  -0.906  0.00  0.00    +0.019 A 
+ATOM     11  C27 XJX A1232      12.474 -18.641   0.006  0.00  0.00    +0.083 A 
+ENDROOT
+BRANCH   1  14
+ATOM     12  C4  XJX A1232      13.137 -21.976   2.931  0.00  0.00    +0.017 A 
+ATOM     13  C5  XJX A1232      13.150 -21.705   1.563  0.00  0.00    +0.007 A 
+ATOM     14  C6  XJX A1232      11.990 -21.322   0.887  0.00  0.00    +0.095 A 
+ATOM     15  C28 XJX A1232      10.792 -21.222   1.572  0.00  0.00    +0.203 A 
+ATOM     16  C30 XJX A1232      10.745 -21.518   2.934  0.00  0.00    +0.084 A 
+ATOM     17  C31 XJX A1232      11.896 -21.902   3.603  0.00  0.00    +0.195 A 
+BRANCH  12  19
+ATOM     18  C1  XJX A1232      14.701 -23.929   3.244  0.00  0.00    +0.005 C 
+ATOM     19  C2  XJX A1232      14.387 -22.485   3.651  0.00  0.00    +0.025 C 
+ATOM     20  C3  XJX A1232      15.610 -21.597   3.446  0.00  0.00    +0.005 C 
+ENDBRANCH  12  19
+BRANCH  15  21
+ATOM     21  O29 XJX A1232       9.658 -20.849   0.898  0.00  0.00    -0.286 OA
+ATOM     22  H   XJX A1232       9.700 -20.652  -0.017  0.00  0.00    +0.000 HD
+ENDBRANCH  15  21
+BRANCH  17  23
+ATOM     23  O32 XJX A1232      11.803 -22.155   4.944  0.00  0.00    -0.287 OA
+ATOM     24  H   XJX A1232      12.563 -22.417   5.425  0.00  0.00    +0.000 HD
+ENDBRANCH  17  23
+ENDBRANCH   1  14
+BRANCH   8  25
+ATOM     25  C15 XJX A1232      12.255 -13.665  -1.200  0.00  0.00    +0.099 C 
+BRANCH  25  26
+ATOM     26  N16 XJX A1232      10.855 -13.101  -1.178  0.00  0.00    -0.267 NA
+ATOM     27  C18 XJX A1232      10.484 -12.513  -2.509  0.00  0.00    +0.090 C 
+ATOM     28  C19 XJX A1232       9.067 -11.960  -2.495  0.00  0.00    +0.090 C 
+ATOM     29  N20 XJX A1232       8.107 -13.040  -2.115  0.00  0.00    -0.269 NA
+ATOM     30  C22 XJX A1232       6.693 -12.567  -2.182  0.00  0.00    +0.090 C 
+ATOM     31  C23 XJX A1232       8.446 -13.569  -0.759  0.00  0.00    +0.090 C 
+ATOM     32  C24 XJX A1232       9.855 -14.140  -0.765  0.00  0.00    +0.090 C 
+ENDBRANCH  25  26
+ENDBRANCH   8  25
+TORSDOF 6
+ENDMDL
+MODEL 5
+REMARK minimizedAffinity -6.78334761
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_JCIM/docking_rerun/calibration_outputs/2XJX_XJX_native.pdb
+REMARK  9 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C3_3
+REMARK    3  A    between atoms: C2_2  and  C4_4
+REMARK    4  A    between atoms: C6_6  and  C7_7
+REMARK    5  A    between atoms: C14_14  and  C15_15
+REMARK    6  A    between atoms: C15_15  and  N16_16
+REMARK    7  A    between atoms: N20_19  and  C22_20
+REMARK    8  A    between atoms: C28_26  and  O29_27
+REMARK    9  A    between atoms: C31_29  and  O32_30
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C7  XJX A1232       2.117 -16.078  23.962  0.00  0.00    +0.268 C 
+ATOM      2  O8  XJX A1232       2.266 -16.724  22.944  0.00  0.00    -0.267 OA
+ATOM      3  N9  XJX A1232       3.127 -15.852  24.815  0.00  0.00    -0.272 N 
+ATOM      4  C10 XJX A1232       4.511 -16.271  24.553  0.00  0.00    +0.083 A 
+ATOM      5  C11 XJX A1232       5.290 -15.442  25.536  0.00  0.00    +0.019 A 
+ATOM      6  C12 XJX A1232       6.665 -15.339  25.701  0.00  0.00    +0.001 A 
+ATOM      7  C13 XJX A1232       7.185 -14.514  26.682  0.00  0.00    -0.003 A 
+ATOM      8  C14 XJX A1232       6.340 -13.783  27.512  0.00  0.00    -0.006 A 
+ATOM      9  C25 XJX A1232       4.965 -13.899  27.328  0.00  0.00    -0.001 A 
+ATOM     10  C26 XJX A1232       4.449 -14.721  26.342  0.00  0.00    +0.019 A 
+ATOM     11  C27 XJX A1232       3.009 -15.007  26.013  0.00  0.00    +0.083 A 
+ENDROOT
+BRANCH   1  14
+ATOM     12  C4  XJX A1232      -1.076 -15.542  25.928  0.00  0.00    +0.017 A 
+ATOM     13  C5  XJX A1232       0.180 -16.001  25.534  0.00  0.00    +0.007 A 
+ATOM     14  C6  XJX A1232       0.762 -15.585  24.334  0.00  0.00    +0.095 A 
+ATOM     15  C28 XJX A1232       0.083 -14.713  23.503  0.00  0.00    +0.203 A 
+ATOM     16  C30 XJX A1232      -1.188 -14.263  23.858  0.00  0.00    +0.084 A 
+ATOM     17  C31 XJX A1232      -1.767 -14.680  25.046  0.00  0.00    +0.195 A 
+BRANCH  12  19
+ATOM     18  C1  XJX A1232      -2.335 -17.467  26.960  0.00  0.00    +0.005 C 
+ATOM     19  C2  XJX A1232      -1.752 -16.069  27.195  0.00  0.00    +0.025 C 
+ATOM     20  C3  XJX A1232      -0.837 -16.073  28.415  0.00  0.00    +0.005 C 
+ENDBRANCH  12  19
+BRANCH  15  21
+ATOM     21  O29 XJX A1232       0.662 -14.314  22.326  0.00  0.00    -0.286 OA
+ATOM     22  H   XJX A1232       1.517 -14.622  22.096  0.00  0.00    +0.000 HD
+ENDBRANCH  15  21
+BRANCH  17  23
+ATOM     23  O32 XJX A1232      -3.003 -14.189  25.363  0.00  0.00    -0.287 OA
+ATOM     24  H   XJX A1232      -3.422 -14.452  26.159  0.00  0.00    +0.000 HD
+ENDBRANCH  17  23
+ENDBRANCH   1  14
+BRANCH   8  25
+ATOM     25  C15 XJX A1232       6.898 -12.897  28.598  0.00  0.00    +0.099 C 
+BRANCH  25  26
+ATOM     26  N16 XJX A1232       7.704 -11.746  28.047  0.00  0.00    -0.267 NA
+ATOM     27  C18 XJX A1232       7.115 -10.426  28.453  0.00  0.00    +0.090 C 
+ATOM     28  C19 XJX A1232       7.936  -9.264  27.914  0.00  0.00    +0.090 C 
+ATOM     29  N20 XJX A1232       9.346  -9.377  28.393  0.00  0.00    -0.269 NA
+ATOM     30  C22 XJX A1232      10.168  -8.204  27.968  0.00  0.00    +0.090 C 
+ATOM     31  C23 XJX A1232       9.943 -10.665  27.925  0.00  0.00    +0.090 C 
+ATOM     32  C24 XJX A1232       9.140 -11.834  28.472  0.00  0.00    +0.090 C 
+ENDBRANCH  25  26
+ENDBRANCH   8  25
+TORSDOF 6
+ENDMDL
+MODEL 6
+REMARK minimizedAffinity -6.6852169
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_JCIM/docking_rerun/calibration_outputs/2XJX_XJX_native.pdb
+REMARK  9 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C3_3
+REMARK    3  A    between atoms: C2_2  and  C4_4
+REMARK    4  A    between atoms: C6_6  and  C7_7
+REMARK    5  A    between atoms: C14_14  and  C15_15
+REMARK    6  A    between atoms: C15_15  and  N16_16
+REMARK    7  A    between atoms: N20_19  and  C22_20
+REMARK    8  A    between atoms: C28_26  and  O29_27
+REMARK    9  A    between atoms: C31_29  and  O32_30
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C7  XJX A1232      -3.031 -14.705  20.511  0.00  0.00    +0.268 C 
+ATOM      2  O8  XJX A1232      -4.218 -14.907  20.356  0.00  0.00    -0.267 OA
+ATOM      3  N9  XJX A1232      -2.468 -14.671  21.728  0.00  0.00    -0.272 N 
+ATOM      4  C10 XJX A1232      -3.205 -14.973  22.964  0.00  0.00    +0.083 A 
+ATOM      5  C11 XJX A1232      -2.096 -15.222  23.947  0.00  0.00    +0.019 A 
+ATOM      6  C12 XJX A1232      -2.174 -15.637  25.270  0.00  0.00    +0.001 A 
+ATOM      7  C13 XJX A1232      -1.019 -15.803  26.014  0.00  0.00    -0.003 A 
+ATOM      8  C14 XJX A1232       0.227 -15.554  25.447  0.00  0.00    -0.006 A 
+ATOM      9  C25 XJX A1232       0.283 -15.141  24.119  0.00  0.00    -0.001 A 
+ATOM     10  C26 XJX A1232      -0.874 -14.982  23.377  0.00  0.00    +0.019 A 
+ATOM     11  C27 XJX A1232      -1.024 -14.515  21.955  0.00  0.00    +0.083 A 
+ENDROOT
+BRANCH   1  14
+ATOM     12  C4  XJX A1232      -1.341 -12.777  17.722  0.00  0.00    +0.017 A 
+ATOM     13  C5  XJX A1232      -2.152 -13.107  18.807  0.00  0.00    +0.007 A 
+ATOM     14  C6  XJX A1232      -2.171 -14.400  19.334  0.00  0.00    +0.095 A 
+ATOM     15  C28 XJX A1232      -1.388 -15.389  18.766  0.00  0.00    +0.203 A 
+ATOM     16  C30 XJX A1232      -0.592 -15.094  17.659  0.00  0.00    +0.084 A 
+ATOM     17  C31 XJX A1232      -0.577 -13.811  17.135  0.00  0.00    +0.195 A 
+BRANCH  12  19
+ATOM     18  C1  XJX A1232      -2.750 -11.136  16.427  0.00  0.00    +0.005 C 
+ATOM     19  C2  XJX A1232      -1.391 -11.386  17.089  0.00  0.00    +0.025 C 
+ATOM     20  C3  XJX A1232      -1.061 -10.262  18.066  0.00  0.00    +0.005 C 
+ENDBRANCH  12  19
+BRANCH  15  21
+ATOM     21  O29 XJX A1232      -1.417 -16.656  19.287  0.00  0.00    -0.286 OA
+ATOM     22  H   XJX A1232      -1.956 -16.845  20.031  0.00  0.00    +0.000 HD
+ENDBRANCH  15  21
+BRANCH  17  23
+ATOM     23  O32 XJX A1232       0.241 -13.565  16.067  0.00  0.00    -0.287 OA
+ATOM     24  H   XJX A1232       0.274 -12.708  15.689  0.00  0.00    +0.000 HD
+ENDBRANCH  17  23
+ENDBRANCH   1  14
+BRANCH   8  25
+ATOM     25  C15 XJX A1232       1.491 -15.711  26.257  0.00  0.00    +0.099 C 
+BRANCH  25  26
+ATOM     26  N16 XJX A1232       2.727 -15.772  25.392  0.00  0.00    -0.267 NA
+ATOM     27  C18 XJX A1232       3.825 -14.914  25.951  0.00  0.00    +0.090 C 
+ATOM     28  C19 XJX A1232       5.078 -14.988  25.091  0.00  0.00    +0.090 C 
+ATOM     29  N20 XJX A1232       5.530 -16.407  24.978  0.00  0.00    -0.269 NA
+ATOM     30  C22 XJX A1232       6.813 -16.517  24.223  0.00  0.00    +0.090 C 
+ATOM     31  C23 XJX A1232       4.453 -17.237  24.357  0.00  0.00    +0.090 C 
+ATOM     32  C24 XJX A1232       3.200 -17.184  25.217  0.00  0.00    +0.090 C 
+ENDBRANCH  25  26
+ENDBRANCH   8  25
+TORSDOF 6
+ENDMDL
+MODEL 7
+REMARK minimizedAffinity -6.64783144
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_JCIM/docking_rerun/calibration_outputs/2XJX_XJX_native.pdb
+REMARK  9 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C3_3
+REMARK    3  A    between atoms: C2_2  and  C4_4
+REMARK    4  A    between atoms: C6_6  and  C7_7
+REMARK    5  A    between atoms: C14_14  and  C15_15
+REMARK    6  A    between atoms: C15_15  and  N16_16
+REMARK    7  A    between atoms: N20_19  and  C22_20
+REMARK    8  A    between atoms: C28_26  and  O29_27
+REMARK    9  A    between atoms: C31_29  and  O32_30
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C7  XJX A1232      -0.672 -15.765  13.994  0.00  0.00    +0.268 C 
+ATOM      2  O8  XJX A1232       0.220 -16.590  13.983  0.00  0.00    -0.267 OA
+ATOM      3  N9  XJX A1232      -1.347 -15.431  12.885  0.00  0.00    -0.272 N 
+ATOM      4  C10 XJX A1232      -1.144 -16.095  11.589  0.00  0.00    +0.083 A 
+ATOM      5  C11 XJX A1232      -2.375 -15.694  10.826  0.00  0.00    +0.019 A 
+ATOM      6  C12 XJX A1232      -2.789 -16.089   9.560  0.00  0.00    +0.001 A 
+ATOM      7  C13 XJX A1232      -3.966 -15.591   9.030  0.00  0.00    -0.003 A 
+ATOM      8  C14 XJX A1232      -4.743 -14.691   9.755  0.00  0.00    -0.006 A 
+ATOM      9  C25 XJX A1232      -4.310 -14.310  11.022  0.00  0.00    -0.001 A 
+ATOM     10  C26 XJX A1232      -3.135 -14.815  11.551  0.00  0.00    +0.019 A 
+ATOM     11  C27 XJX A1232      -2.487 -14.503  12.872  0.00  0.00    +0.083 A 
+ENDROOT
+BRANCH   1  14
+ATOM     12  C4  XJX A1232      -0.852 -12.982  16.558  0.00  0.00    +0.017 A 
+ATOM     13  C5  XJX A1232      -0.557 -13.710  15.406  0.00  0.00    +0.007 A 
+ATOM     14  C6  XJX A1232      -0.984 -15.031  15.251  0.00  0.00    +0.095 A 
+ATOM     15  C28 XJX A1232      -1.701 -15.647  16.262  0.00  0.00    +0.203 A 
+ATOM     16  C30 XJX A1232      -1.982 -14.952  17.437  0.00  0.00    +0.084 A 
+ATOM     17  C31 XJX A1232      -1.554 -13.643  17.591  0.00  0.00    +0.195 A 
+BRANCH  12  19
+ATOM     18  C1  XJX A1232      -1.432 -10.598  17.136  0.00  0.00    +0.005 C 
+ATOM     19  C2  XJX A1232      -0.305 -11.568  16.764  0.00  0.00    +0.025 C 
+ATOM     20  C3  XJX A1232       0.819 -11.496  17.792  0.00  0.00    +0.005 C 
+ENDBRANCH  12  19
+BRANCH  15  21
+ATOM     21  O29 XJX A1232      -2.112 -16.945  16.102  0.00  0.00    -0.286 OA
+ATOM     22  H   XJX A1232      -1.918 -17.404  15.308  0.00  0.00    +0.000 HD
+ENDBRANCH  15  21
+BRANCH  17  23
+ATOM     23  O32 XJX A1232      -1.878 -12.995  18.751  0.00  0.00    -0.287 OA
+ATOM     24  H   XJX A1232      -1.603 -12.110  18.886  0.00  0.00    +0.000 HD
+ENDBRANCH  17  23
+ENDBRANCH   1  14
+BRANCH   8  25
+ATOM     25  C15 XJX A1232      -6.017 -14.127   9.176  0.00  0.00    +0.099 C 
+BRANCH  25  26
+ATOM     26  N16 XJX A1232      -7.092 -13.939  10.219  0.00  0.00    -0.267 NA
+ATOM     27  C18 XJX A1232      -7.640 -12.542  10.190  0.00  0.00    +0.090 C 
+ATOM     28  C19 XJX A1232      -8.737 -12.355  11.229  0.00  0.00    +0.090 C 
+ATOM     29  N20 XJX A1232      -9.826 -13.350  10.997  0.00  0.00    -0.269 NA
+ATOM     30  C22 XJX A1232     -10.970 -13.141  11.933  0.00  0.00    +0.090 C 
+ATOM     31  C23 XJX A1232      -9.280 -14.737  11.097  0.00  0.00    +0.090 C 
+ATOM     32  C24 XJX A1232      -8.194 -14.941  10.052  0.00  0.00    +0.090 C 
+ENDBRANCH  25  26
+ENDBRANCH   8  25
+TORSDOF 6
+ENDMDL
+MODEL 8
+REMARK minimizedAffinity -6.61651421
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_JCIM/docking_rerun/calibration_outputs/2XJX_XJX_native.pdb
+REMARK  9 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C3_3
+REMARK    3  A    between atoms: C2_2  and  C4_4
+REMARK    4  A    between atoms: C6_6  and  C7_7
+REMARK    5  A    between atoms: C14_14  and  C15_15
+REMARK    6  A    between atoms: C15_15  and  N16_16
+REMARK    7  A    between atoms: N20_19  and  C22_20
+REMARK    8  A    between atoms: C28_26  and  O29_27
+REMARK    9  A    between atoms: C31_29  and  O32_30
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C7  XJX A1232      -1.480 -15.877  13.458  0.00  0.00    +0.268 C 
+ATOM      2  O8  XJX A1232      -0.951 -16.943  13.700  0.00  0.00    -0.267 OA
+ATOM      3  N9  XJX A1232      -2.249 -15.694  12.375  0.00  0.00    -0.272 N 
+ATOM      4  C10 XJX A1232      -2.603 -16.778  11.447  0.00  0.00    +0.083 A 
+ATOM      5  C11 XJX A1232      -3.772 -16.195  10.703  0.00  0.00    +0.019 A 
+ATOM      6  C12 XJX A1232      -4.589 -16.789   9.749  0.00  0.00    +0.001 A 
+ATOM      7  C13 XJX A1232      -5.619 -16.067   9.173  0.00  0.00    -0.003 A 
+ATOM      8  C14 XJX A1232      -5.845 -14.743   9.539  0.00  0.00    -0.006 A 
+ATOM      9  C25 XJX A1232      -5.016 -14.168  10.498  0.00  0.00    -0.001 A 
+ATOM     10  C26 XJX A1232      -3.990 -14.895  11.076  0.00  0.00    +0.019 A 
+ATOM     11  C27 XJX A1232      -2.975 -14.447  12.091  0.00  0.00    +0.083 A 
+ENDROOT
+BRANCH   1  14
+ATOM     12  C4  XJX A1232      -1.874 -13.304  16.210  0.00  0.00    +0.017 A 
+ATOM     13  C5  XJX A1232      -2.105 -14.381  15.356  0.00  0.00    +0.007 A 
+ATOM     14  C6  XJX A1232      -1.211 -14.702  14.332  0.00  0.00    +0.095 A 
+ATOM     15  C28 XJX A1232      -0.077 -13.933  14.141  0.00  0.00    +0.203 A 
+ATOM     16  C30 XJX A1232       0.162 -12.831  14.961  0.00  0.00    +0.084 A 
+ATOM     17  C31 XJX A1232      -0.729 -12.512  15.973  0.00  0.00    +0.195 A 
+BRANCH  12  19
+ATOM     18  C1  XJX A1232      -3.837 -11.811  16.734  0.00  0.00    +0.005 C 
+ATOM     19  C2  XJX A1232      -2.900 -12.899  17.270  0.00  0.00    +0.025 C 
+ATOM     20  C3  XJX A1232      -3.706 -14.072  17.816  0.00  0.00    +0.005 C 
+ENDBRANCH  12  19
+BRANCH  15  21
+ATOM     21  O29 XJX A1232       0.793 -14.254  13.130  0.00  0.00    -0.286 OA
+ATOM     22  H   XJX A1232       0.623 -14.997  12.584  0.00  0.00    +0.000 HD
+ENDBRANCH  15  21
+BRANCH  17  23
+ATOM     23  O32 XJX A1232      -0.436 -11.438  16.768  0.00  0.00    -0.287 OA
+ATOM     24  H   XJX A1232      -1.018 -11.196  17.462  0.00  0.00    +0.000 HD
+ENDBRANCH  17  23
+ENDBRANCH   1  14
+BRANCH   8  25
+ATOM     25  C15 XJX A1232      -6.953 -13.942   8.900  0.00  0.00    +0.099 C 
+BRANCH  25  26
+ATOM     26  N16 XJX A1232      -8.095 -13.677   9.850  0.00  0.00    -0.267 NA
+ATOM     27  C18 XJX A1232      -8.064 -12.266  10.359  0.00  0.00    +0.090 C 
+ATOM     28  C19 XJX A1232      -9.226 -11.991  11.303  0.00  0.00    +0.090 C 
+ATOM     29  N20 XJX A1232     -10.518 -12.267  10.606  0.00  0.00    -0.269 NA
+ATOM     30  C22 XJX A1232     -11.691 -11.919  11.463  0.00  0.00    +0.090 C 
+ATOM     31  C23 XJX A1232     -10.565 -13.694  10.165  0.00  0.00    +0.090 C 
+ATOM     32  C24 XJX A1232      -9.417 -13.976   9.207  0.00  0.00    +0.090 C 
+ENDBRANCH  25  26
+ENDBRANCH   8  25
+TORSDOF 6
+ENDMDL
+MODEL 9
+REMARK minimizedAffinity -6.59505844
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_JCIM/docking_rerun/calibration_outputs/2XJX_XJX_native.pdb
+REMARK  9 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_1  and  C2_2
+REMARK    2  A    between atoms: C2_2  and  C3_3
+REMARK    3  A    between atoms: C2_2  and  C4_4
+REMARK    4  A    between atoms: C6_6  and  C7_7
+REMARK    5  A    between atoms: C14_14  and  C15_15
+REMARK    6  A    between atoms: C15_15  and  N16_16
+REMARK    7  A    between atoms: N20_19  and  C22_20
+REMARK    8  A    between atoms: C28_26  and  O29_27
+REMARK    9  A    between atoms: C31_29  and  O32_30
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C7  XJX A1232      -2.383 -14.339  20.799  0.00  0.00    +0.268 C 
+ATOM      2  O8  XJX A1232      -3.595 -14.309  20.876  0.00  0.00    -0.267 OA
+ATOM      3  N9  XJX A1232      -1.604 -14.450  21.885  0.00  0.00    -0.272 N 
+ATOM      4  C10 XJX A1232      -2.138 -14.646  23.241  0.00  0.00    +0.083 A 
+ATOM      5  C11 XJX A1232      -0.931 -15.131  23.995  0.00  0.00    +0.019 A 
+ATOM      6  C12 XJX A1232      -0.835 -15.565  25.311  0.00  0.00    +0.001 A 
+ATOM      7  C13 XJX A1232       0.386 -15.968  25.820  0.00  0.00    -0.003 A 
+ATOM      8  C14 XJX A1232       1.527 -15.941  25.023  0.00  0.00    -0.006 A 
+ATOM      9  C25 XJX A1232       1.409 -15.505  23.707  0.00  0.00    -0.001 A 
+ATOM     10  C26 XJX A1232       0.184 -15.108  23.200  0.00  0.00    +0.019 A 
+ATOM     11  C27 XJX A1232      -0.141 -14.576  21.831  0.00  0.00    +0.083 A 
+ENDROOT
+BRANCH   1  14
+ATOM     12  C4  XJX A1232      -0.649 -12.698  17.858  0.00  0.00    +0.017 A 
+ATOM     13  C5  XJX A1232      -1.296 -12.896  19.077  0.00  0.00    +0.007 A 
+ATOM     14  C6  XJX A1232      -1.720 -14.165  19.478  0.00  0.00    +0.095 A 
+ATOM     15  C28 XJX A1232      -1.514 -15.254  18.650  0.00  0.00    +0.203 A 
+ATOM     16  C30 XJX A1232      -0.898 -15.079  17.411  0.00  0.00    +0.084 A 
+ATOM     17  C31 XJX A1232      -0.483 -13.818  17.013  0.00  0.00    +0.195 A 
+BRANCH  12  19
+ATOM     18  C1  XJX A1232      -1.392 -10.295  17.680  0.00  0.00    +0.005 C 
+ATOM     19  C2  XJX A1232      -0.270 -11.295  17.380  0.00  0.00    +0.025 C 
+ATOM     20  C3  XJX A1232       1.053 -10.796  17.952  0.00  0.00    +0.005 C 
+ENDBRANCH  12  19
+BRANCH  15  21
+ATOM     21  O29 XJX A1232      -1.937 -16.496  19.050  0.00  0.00    -0.286 OA
+ATOM     22  H   XJX A1232      -2.351 -16.603  19.884  0.00  0.00    +0.000 HD
+ENDBRANCH  15  21
+BRANCH  17  23
+ATOM     23  O32 XJX A1232       0.141 -13.702  15.802  0.00  0.00    -0.287 OA
+ATOM     24  H   XJX A1232       0.434 -12.864  15.504  0.00  0.00    +0.000 HD
+ENDBRANCH  17  23
+ENDBRANCH   1  14
+BRANCH   8  25
+ATOM     25  C15 XJX A1232       2.868 -16.360  25.576  0.00  0.00    +0.099 C 
+BRANCH  25  26
+ATOM     26  N16 XJX A1232       3.406 -15.379  26.590  0.00  0.00    -0.267 NA
+ATOM     27  C18 XJX A1232       3.519 -16.008  27.948  0.00  0.00    +0.090 C 
+ATOM     28  C19 XJX A1232       4.078 -15.027  28.968  0.00  0.00    +0.090 C 
+ATOM     29  N20 XJX A1232       5.410 -14.528  28.511  0.00  0.00    -0.269 NA
+ATOM     30  C22 XJX A1232       6.042 -13.635  29.527  0.00  0.00    +0.090 C 
+ATOM     31  C23 XJX A1232       5.271 -13.844  27.189  0.00  0.00    +0.090 C 
+ATOM     32  C24 XJX A1232       4.728 -14.820  26.157  0.00  0.00    +0.090 C 
+ENDBRANCH  25  26
+ENDBRANCH   8  25
+TORSDOF 6
+ENDMDL

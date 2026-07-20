@@ -1,0 +1,405 @@
+MODEL 1
+REMARK minimizedAffinity -5.76034498
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_Sensors_ActuatorsB/docking_rerun/ligands/4550.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_2  and  C1_3
+REMARK    2  A    between atoms: C4_6  and  N2_7
+REMARK    3  A    between atoms: N2_7  and  O2_8
+REMARK    4  A    between atoms: N2_7  and  O3_9
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C1  UNL     1      18.130  -4.425  10.963  0.00  0.00    +0.180 C 
+ATOM      2  C2  UNL     1      17.693  -3.609  10.020  0.00  0.00    +0.034 A 
+ATOM      3  C3  UNL     1      16.509  -3.666   9.296  0.00  0.00    +0.043 A 
+ATOM      4  C4  UNL     1      16.253  -2.676   8.327  0.00  0.00    +0.099 A 
+ATOM      5  C5  UNL     1      17.190  -1.609   8.134  0.00  0.00    -0.014 A 
+ATOM      6  C6  UNL     1      18.412  -1.597   8.871  0.00  0.00    -0.018 A 
+ATOM      7  C7  UNL     1      18.627  -2.606   9.818  0.00  0.00    +0.070 A 
+ATOM      8  N3  UNL     1      19.671  -2.706  10.586  0.00  0.00    -0.174 NA
+ATOM      9  C8  UNL     1      19.411  -3.874  11.357  0.00  0.00    +0.290 C 
+ATOM     10  O4  UNL     1      20.186  -4.332  12.236  0.00  0.00    -0.266 OA
+ATOM     11  C9  UNL     1      19.420  -0.474   8.743  0.00  0.00    +0.037 C 
+ATOM     12  C10 UNL     1      19.221   0.363   7.480  0.00  0.00    +0.005 C 
+ATOM     13  C11 UNL     1      17.752   0.740   7.328  0.00  0.00    +0.005 C 
+ATOM     14  C12 UNL     1      16.902  -0.515   7.121  0.00  0.00    +0.038 C 
+ENDROOT
+BRANCH   1  16
+ATOM     15  O1  UNL     1      18.007  -6.706  11.416  0.00  0.00    -0.143 OA
+ATOM     16  N1  UNL     1      17.466  -5.584  11.468  0.00  0.00    -0.025 NA
+ENDBRANCH   1  16
+BRANCH   4  17
+ATOM     17  N2  UNL     1      15.041  -2.773   7.553  0.00  0.00    -0.128 N 
+BRANCH  17  18
+ATOM     18  O2  UNL     1      13.886  -2.213   7.990  0.00  0.00    -0.262 OA
+ATOM     19  H2  UNL     1      13.904  -1.287   7.637  0.00  0.00    +0.247 HD
+ENDBRANCH  17  18
+BRANCH  17  20
+ATOM     20  O3  UNL     1      15.053  -3.385   6.343  0.00  0.00    -0.262 OA
+ATOM     21  H3  UNL     1      15.220  -2.658   5.690  0.00  0.00    +0.247 HD
+ENDBRANCH  17  20
+ENDBRANCH   4  17
+TORSDOF 4
+ENDMDL
+MODEL 2
+REMARK minimizedAffinity -5.72422695
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_Sensors_ActuatorsB/docking_rerun/ligands/4550.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_2  and  C1_3
+REMARK    2  A    between atoms: C4_6  and  N2_7
+REMARK    3  A    between atoms: N2_7  and  O2_8
+REMARK    4  A    between atoms: N2_7  and  O3_9
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C1  UNL     1       7.519  17.392  19.433  0.00  0.00    +0.180 C 
+ATOM      2  C2  UNL     1       6.992  16.182  19.488  0.00  0.00    +0.034 A 
+ATOM      3  C3  UNL     1       6.281  15.585  20.521  0.00  0.00    +0.043 A 
+ATOM      4  C4  UNL     1       5.812  14.266  20.353  0.00  0.00    +0.099 A 
+ATOM      5  C5  UNL     1       6.035  13.582  19.115  0.00  0.00    -0.014 A 
+ATOM      6  C6  UNL     1       6.797  14.212  18.084  0.00  0.00    -0.018 A 
+ATOM      7  C7  UNL     1       7.250  15.520  18.298  0.00  0.00    +0.070 A 
+ATOM      8  N3  UNL     1       7.922  16.231  17.443  0.00  0.00    -0.174 NA
+ATOM      9  C8  UNL     1       8.131  17.465  18.122  0.00  0.00    +0.290 C 
+ATOM     10  O4  UNL     1       8.752  18.446  17.637  0.00  0.00    -0.266 OA
+ATOM     11  C9  UNL     1       7.029  13.558  16.738  0.00  0.00    +0.037 C 
+ATOM     12  C10 UNL     1       6.769  12.052  16.757  0.00  0.00    +0.005 C 
+ATOM     13  C11 UNL     1       5.439  11.758  17.441  0.00  0.00    +0.005 C 
+ATOM     14  C12 UNL     1       5.497  12.177  18.911  0.00  0.00    +0.038 C 
+ENDROOT
+BRANCH   1  16
+ATOM     15  O1  UNL     1       8.488  18.661  21.129  0.00  0.00    -0.143 OA
+ATOM     16  N1  UNL     1       7.475  18.392  20.452  0.00  0.00    -0.025 NA
+ENDBRANCH   1  16
+BRANCH   4  17
+ATOM     17  N2  UNL     1       5.115  13.645  21.451  0.00  0.00    -0.128 N 
+BRANCH  17  18
+ATOM     18  O2  UNL     1       3.946  12.987  21.253  0.00  0.00    -0.262 OA
+ATOM     19  H2  UNL     1       4.211  12.056  21.041  0.00  0.00    +0.247 HD
+ENDBRANCH  17  18
+BRANCH  17  20
+ATOM     20  O3  UNL     1       5.651  13.664  22.696  0.00  0.00    -0.262 OA
+ATOM     21  H3  UNL     1       6.173  12.824  22.764  0.00  0.00    +0.247 HD
+ENDBRANCH  17  20
+ENDBRANCH   4  17
+TORSDOF 4
+ENDMDL
+MODEL 3
+REMARK minimizedAffinity -5.66401625
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_Sensors_ActuatorsB/docking_rerun/ligands/4550.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_2  and  C1_3
+REMARK    2  A    between atoms: C4_6  and  N2_7
+REMARK    3  A    between atoms: N2_7  and  O2_8
+REMARK    4  A    between atoms: N2_7  and  O3_9
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C1  UNL     1       7.663  17.605  20.909  0.00  0.00    +0.180 C 
+ATOM      2  C2  UNL     1       7.458  16.603  20.074  0.00  0.00    +0.034 A 
+ATOM      3  C3  UNL     1       8.116  16.307  18.888  0.00  0.00    +0.043 A 
+ATOM      4  C4  UNL     1       7.720  15.172  18.152  0.00  0.00    +0.099 A 
+ATOM      5  C5  UNL     1       6.683  14.322  18.656  0.00  0.00    -0.014 A 
+ATOM      6  C6  UNL     1       6.004  14.671  19.863  0.00  0.00    -0.018 A 
+ATOM      7  C7  UNL     1       6.427  15.812  20.556  0.00  0.00    +0.070 A 
+ATOM      8  N3  UNL     1       5.931  16.235  21.681  0.00  0.00    -0.174 NA
+ATOM      9  C8  UNL     1       6.693  17.403  21.967  0.00  0.00    +0.290 C 
+ATOM     10  O4  UNL     1       6.529  18.126  22.984  0.00  0.00    -0.266 OA
+ATOM     11  C9  UNL     1       4.931  13.791  20.469  0.00  0.00    +0.037 C 
+ATOM     12  C10 UNL     1       4.360  12.781  19.475  0.00  0.00    +0.005 C 
+ATOM     13  C11 UNL     1       5.491  12.073  18.739  0.00  0.00    +0.005 C 
+ATOM     14  C12 UNL     1       6.279  13.074  17.892  0.00  0.00    +0.038 C 
+ENDROOT
+BRANCH   1  16
+ATOM     15  O1  UNL     1       9.824  18.451  21.106  0.00  0.00    -0.143 OA
+ATOM     16  N1  UNL     1       8.636  18.643  20.780  0.00  0.00    -0.025 NA
+ENDBRANCH   1  16
+BRANCH   4  17
+ATOM     17  N2  UNL     1       8.382  14.902  16.901  0.00  0.00    -0.128 N 
+BRANCH  17  18
+ATOM     18  O2  UNL     1       7.894  15.387  15.733  0.00  0.00    -0.262 OA
+ATOM     19  H2  UNL     1       8.313  16.280  15.634  0.00  0.00    +0.247 HD
+ENDBRANCH  17  18
+BRANCH  17  20
+ATOM     20  O3  UNL     1       9.541  14.199  16.882  0.00  0.00    -0.262 OA
+ATOM     21  H3  UNL     1      10.257  14.884  16.928  0.00  0.00    +0.247 HD
+ENDBRANCH  17  20
+ENDBRANCH   4  17
+TORSDOF 4
+ENDMDL
+MODEL 4
+REMARK minimizedAffinity -5.64114475
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_Sensors_ActuatorsB/docking_rerun/ligands/4550.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_2  and  C1_3
+REMARK    2  A    between atoms: C4_6  and  N2_7
+REMARK    3  A    between atoms: N2_7  and  O2_8
+REMARK    4  A    between atoms: N2_7  and  O3_9
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C1  UNL     1       5.259  13.974  20.385  0.00  0.00    +0.180 C 
+ATOM      2  C2  UNL     1       6.186  14.671  19.753  0.00  0.00    +0.034 A 
+ATOM      3  C3  UNL     1       6.843  14.376  18.565  0.00  0.00    +0.043 A 
+ATOM      4  C4  UNL     1       7.809  15.278  18.077  0.00  0.00    +0.099 A 
+ATOM      5  C5  UNL     1       8.067  16.497  18.783  0.00  0.00    -0.014 A 
+ATOM      6  C6  UNL     1       7.399  16.757  20.017  0.00  0.00    -0.018 A 
+ATOM      7  C7  UNL     1       6.452  15.828  20.468  0.00  0.00    +0.070 A 
+ATOM      8  N3  UNL     1       5.742  15.944  21.550  0.00  0.00    -0.174 NA
+ATOM      9  C8  UNL     1       4.942  14.766  21.557  0.00  0.00    +0.290 C 
+ATOM     10  O4  UNL     1       4.102  14.483  22.449  0.00  0.00    -0.266 OA
+ATOM     11  C9  UNL     1       7.596  18.047  20.786  0.00  0.00    +0.037 C 
+ATOM     12  C10 UNL     1       8.857  18.801  20.367  0.00  0.00    +0.005 C 
+ATOM     13  C11 UNL     1       8.932  18.891  18.847  0.00  0.00    +0.005 C 
+ATOM     14  C12 UNL     1       9.076  17.494  18.241  0.00  0.00    +0.038 C 
+ENDROOT
+BRANCH   1  16
+ATOM     15  O1  UNL     1       3.874  12.662  19.050  0.00  0.00    -0.143 OA
+ATOM     16  N1  UNL     1       4.703  12.723  19.979  0.00  0.00    -0.025 NA
+ENDBRANCH   1  16
+BRANCH   4  17
+ATOM     17  N2  UNL     1       8.514  14.936  16.867  0.00  0.00    -0.128 N 
+BRANCH  17  18
+ATOM     18  O2  UNL     1       8.074  15.364  15.658  0.00  0.00    -0.262 OA
+ATOM     19  H2  UNL     1       8.508  16.246  15.528  0.00  0.00    +0.247 HD
+ENDBRANCH  17  18
+BRANCH  17  20
+ATOM     20  O3  UNL     1       9.664  14.221  16.928  0.00  0.00    -0.262 OA
+ATOM     21  H3  UNL     1      10.386  14.899  16.965  0.00  0.00    +0.247 HD
+ENDBRANCH  17  20
+ENDBRANCH   4  17
+TORSDOF 4
+ENDMDL
+MODEL 5
+REMARK minimizedAffinity -5.62680244
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_Sensors_ActuatorsB/docking_rerun/ligands/4550.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_2  and  C1_3
+REMARK    2  A    between atoms: C4_6  and  N2_7
+REMARK    3  A    between atoms: N2_7  and  O2_8
+REMARK    4  A    between atoms: N2_7  and  O3_9
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C1  UNL     1       7.600  16.021  17.306  0.00  0.00    +0.180 C 
+ATOM      2  C2  UNL     1       6.893  15.375  18.216  0.00  0.00    +0.034 A 
+ATOM      3  C3  UNL     1       6.192  14.182  18.092  0.00  0.00    +0.043 A 
+ATOM      4  C4  UNL     1       5.499  13.679  19.211  0.00  0.00    +0.099 A 
+ATOM      5  C5  UNL     1       5.562  14.375  20.461  0.00  0.00    -0.014 A 
+ATOM      6  C6  UNL     1       6.265  15.615  20.547  0.00  0.00    -0.018 A 
+ATOM      7  C7  UNL     1       6.932  16.081  19.407  0.00  0.00    +0.070 A 
+ATOM      8  N3  UNL     1       7.639  17.170  19.343  0.00  0.00    -0.174 NA
+ATOM      9  C8  UNL     1       8.103  17.191  17.997  0.00  0.00    +0.290 C 
+ATOM     10  O4  UNL     1       8.832  18.094  17.512  0.00  0.00    -0.266 OA
+ATOM     11  C9  UNL     1       6.404  16.375  21.850  0.00  0.00    +0.037 C 
+ATOM     12  C10 UNL     1       5.387  15.938  22.904  0.00  0.00    +0.005 C 
+ATOM     13  C11 UNL     1       5.351  14.417  22.999  0.00  0.00    +0.005 C 
+ATOM     14  C12 UNL     1       4.853  13.817  21.683  0.00  0.00    +0.038 C 
+ENDROOT
+BRANCH   1  16
+ATOM     15  O1  UNL     1       8.830  14.984  15.621  0.00  0.00    -0.143 OA
+ATOM     16  N1  UNL     1       7.814  15.628  15.949  0.00  0.00    -0.025 NA
+ENDBRANCH   1  16
+BRANCH   4  17
+ATOM     17  N2  UNL     1       4.740  12.463  19.055  0.00  0.00    -0.128 N 
+BRANCH  17  18
+ATOM     18  O2  UNL     1       3.414  12.426  19.334  0.00  0.00    -0.262 OA
+ATOM     19  H2  UNL     1       2.969  12.680  18.486  0.00  0.00    +0.247 HD
+ENDBRANCH  17  18
+BRANCH  17  20
+ATOM     20  O3  UNL     1       5.337  11.346  18.572  0.00  0.00    -0.262 OA
+ATOM     21  H3  UNL     1       5.184  11.376  17.593  0.00  0.00    +0.247 HD
+ENDBRANCH  17  20
+ENDBRANCH   4  17
+TORSDOF 4
+ENDMDL
+MODEL 6
+REMARK minimizedAffinity -5.59743595
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_Sensors_ActuatorsB/docking_rerun/ligands/4550.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_2  and  C1_3
+REMARK    2  A    between atoms: C4_6  and  N2_7
+REMARK    3  A    between atoms: N2_7  and  O2_8
+REMARK    4  A    between atoms: N2_7  and  O3_9
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C1  UNL     1       6.434  13.274  17.360  0.00  0.00    +0.180 C 
+ATOM      2  C2  UNL     1       6.550  14.131  18.359  0.00  0.00    +0.034 A 
+ATOM      3  C3  UNL     1       7.264  15.321  18.409  0.00  0.00    +0.043 A 
+ATOM      4  C4  UNL     1       7.244  16.079  19.597  0.00  0.00    +0.099 A 
+ATOM      5  C5  UNL     1       6.460  15.637  20.712  0.00  0.00    -0.014 A 
+ATOM      6  C6  UNL     1       5.763  14.393  20.640  0.00  0.00    -0.018 A 
+ATOM      7  C7  UNL     1       5.818  13.670  19.441  0.00  0.00    +0.070 A 
+ATOM      8  N3  UNL     1       5.209  12.544  19.215  0.00  0.00    -0.174 NA
+ATOM      9  C8  UNL     1       5.571  12.229  17.874  0.00  0.00    +0.290 C 
+ATOM     10  O4  UNL     1       5.187  11.202  17.258  0.00  0.00    -0.266 OA
+ATOM     11  C9  UNL     1       4.883  13.894  21.767  0.00  0.00    +0.037 C 
+ATOM     12  C10 UNL     1       5.164  14.596  23.095  0.00  0.00    +0.005 C 
+ATOM     13  C11 UNL     1       5.223  16.105  22.888  0.00  0.00    +0.005 C 
+ATOM     14  C12 UNL     1       6.399  16.469  21.981  0.00  0.00    +0.038 C 
+ENDROOT
+BRANCH   1  16
+ATOM     15  O1  UNL     1       6.328  13.490  15.044  0.00  0.00    -0.143 OA
+ATOM     16  N1  UNL     1       7.032  13.380  16.067  0.00  0.00    -0.025 NA
+ENDBRANCH   1  16
+BRANCH   4  17
+ATOM     17  N2  UNL     1       8.025  17.289  19.650  0.00  0.00    -0.128 N 
+BRANCH  17  18
+ATOM     18  O2  UNL     1       9.320  17.269  20.049  0.00  0.00    -0.262 OA
+ATOM     19  H2  UNL     1       9.839  17.103  19.220  0.00  0.00    +0.247 HD
+ENDBRANCH  17  18
+BRANCH  17  20
+ATOM     20  O3  UNL     1       7.485  18.465  19.245  0.00  0.00    -0.262 OA
+ATOM     21  H3  UNL     1       7.727  18.542  18.287  0.00  0.00    +0.247 HD
+ENDBRANCH  17  20
+ENDBRANCH   4  17
+TORSDOF 4
+ENDMDL
+MODEL 7
+REMARK minimizedAffinity -5.55099106
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_Sensors_ActuatorsB/docking_rerun/ligands/4550.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_2  and  C1_3
+REMARK    2  A    between atoms: C4_6  and  N2_7
+REMARK    3  A    between atoms: N2_7  and  O2_8
+REMARK    4  A    between atoms: N2_7  and  O3_9
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C1  UNL     1       6.167  16.096  21.552  0.00  0.00    +0.180 C 
+ATOM      2  C2  UNL     1       6.407  15.492  20.403  0.00  0.00    +0.034 A 
+ATOM      3  C3  UNL     1       7.423  15.731  19.486  0.00  0.00    +0.043 A 
+ATOM      4  C4  UNL     1       7.480  14.954  18.312  0.00  0.00    +0.099 A 
+ATOM      5  C5  UNL     1       6.525  13.907  18.102  0.00  0.00    -0.014 A 
+ATOM      6  C6  UNL     1       5.474  13.708  19.048  0.00  0.00    -0.018 A 
+ATOM      7  C7  UNL     1       5.452  14.509  20.196  0.00  0.00    +0.070 A 
+ATOM      8  N3  UNL     1       4.582  14.421  21.158  0.00  0.00    -0.174 NA
+ATOM      9  C8  UNL     1       4.991  15.430  22.076  0.00  0.00    +0.290 C 
+ATOM     10  O4  UNL     1       4.406  15.682  23.161  0.00  0.00    -0.266 OA
+ATOM     11  C9  UNL     1       4.461  12.591  18.904  0.00  0.00    +0.037 C 
+ATOM     12  C10 UNL     1       4.405  12.018  17.489  0.00  0.00    +0.005 C 
+ATOM     13  C11 UNL     1       5.814  11.734  16.982  0.00  0.00    +0.005 C 
+ATOM     14  C12 UNL     1       6.605  13.038  16.861  0.00  0.00    +0.038 C 
+ENDROOT
+BRANCH   1  16
+ATOM     15  O1  UNL     1       7.670  16.960  23.107  0.00  0.00    -0.143 OA
+ATOM     16  N1  UNL     1       6.918  17.163  22.133  0.00  0.00    -0.025 NA
+ENDBRANCH   1  16
+BRANCH   4  17
+ATOM     17  N2  UNL     1       8.514  15.244  17.350  0.00  0.00    -0.128 N 
+BRANCH  17  18
+ATOM     18  O2  UNL     1       9.652  14.508  17.303  0.00  0.00    -0.262 OA
+ATOM     19  H2  UNL     1       9.445  13.759  16.688  0.00  0.00    +0.247 HD
+ENDBRANCH  17  18
+BRANCH  17  20
+ATOM     20  O3  UNL     1       8.336  16.230  16.437  0.00  0.00    -0.262 OA
+ATOM     21  H3  UNL     1       7.949  15.779  15.644  0.00  0.00    +0.247 HD
+ENDBRANCH  17  20
+ENDBRANCH   4  17
+TORSDOF 4
+ENDMDL
+MODEL 8
+REMARK minimizedAffinity -5.47650337
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_Sensors_ActuatorsB/docking_rerun/ligands/4550.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_2  and  C1_3
+REMARK    2  A    between atoms: C4_6  and  N2_7
+REMARK    3  A    between atoms: N2_7  and  O2_8
+REMARK    4  A    between atoms: N2_7  and  O3_9
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C1  UNL     1       5.936  12.865  17.555  0.00  0.00    +0.180 C 
+ATOM      2  C2  UNL     1       5.999  13.650  18.616  0.00  0.00    +0.034 A 
+ATOM      3  C3  UNL     1       5.421  13.475  19.867  0.00  0.00    +0.043 A 
+ATOM      4  C4  UNL     1       5.624  14.458  20.856  0.00  0.00    +0.099 A 
+ATOM      5  C5  UNL     1       6.453  15.592  20.575  0.00  0.00    -0.014 A 
+ATOM      6  C6  UNL     1       7.007  15.758  19.269  0.00  0.00    -0.018 A 
+ATOM      7  C7  UNL     1       6.771  14.760  18.315  0.00  0.00    +0.070 A 
+ATOM      8  N3  UNL     1       7.236  14.756  17.101  0.00  0.00    -0.174 NA
+ATOM      9  C8  UNL     1       6.727  13.546  16.550  0.00  0.00    +0.290 C 
+ATOM     10  O4  UNL     1       6.945  13.155  15.374  0.00  0.00    -0.266 OA
+ATOM     11  C9  UNL     1       7.926  16.912  18.924  0.00  0.00    +0.037 C 
+ATOM     12  C10 UNL     1       7.838  18.062  19.926  0.00  0.00    +0.005 C 
+ATOM     13  C11 UNL     1       7.920  17.524  21.350  0.00  0.00    +0.005 C 
+ATOM     14  C12 UNL     1       6.712  16.633  21.648  0.00  0.00    +0.038 C 
+ENDROOT
+BRANCH   1  16
+ATOM     15  O1  UNL     1       4.084  11.573  16.988  0.00  0.00    -0.143 OA
+ATOM     16  N1  UNL     1       5.241  11.622  17.449  0.00  0.00    -0.025 NA
+ENDBRANCH   1  16
+BRANCH   4  17
+ATOM     17  N2  UNL     1       4.982  14.284  22.135  0.00  0.00    -0.128 N 
+BRANCH  17  18
+ATOM     18  O2  UNL     1       3.661  14.539  22.293  0.00  0.00    -0.262 OA
+ATOM     19  H2  UNL     1       3.209  13.684  22.076  0.00  0.00    +0.247 HD
+ENDBRANCH  17  18
+BRANCH  17  20
+ATOM     20  O3  UNL     1       5.687  13.808  23.191  0.00  0.00    -0.262 OA
+ATOM     21  H3  UNL     1       5.549  12.826  23.169  0.00  0.00    +0.247 HD
+ENDBRANCH  17  20
+ENDBRANCH   4  17
+TORSDOF 4
+ENDMDL
+MODEL 9
+REMARK minimizedAffinity -5.38363647
+REMARK minimizedRMSD -1
+REMARK  Name = /home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/Paper2_Sensors_ActuatorsB/docking_rerun/ligands/4550.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_2  and  C1_3
+REMARK    2  A    between atoms: C4_6  and  N2_7
+REMARK    3  A    between atoms: N2_7  and  O2_8
+REMARK    4  A    between atoms: N2_7  and  O3_9
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C1  UNL     1      18.542   1.089   6.479  0.00  0.00    +0.180 C 
+ATOM      2  C2  UNL     1      18.693   0.165   7.412  0.00  0.00    +0.034 A 
+ATOM      3  C3  UNL     1      19.739  -0.008   8.308  0.00  0.00    +0.043 A 
+ATOM      4  C4  UNL     1      19.685  -1.079   9.222  0.00  0.00    +0.099 A 
+ATOM      5  C5  UNL     1      18.541  -1.941   9.244  0.00  0.00    -0.014 A 
+ATOM      6  C6  UNL     1      17.496  -1.756   8.288  0.00  0.00    -0.018 A 
+ATOM      7  C7  UNL     1      17.597  -0.683   7.393  0.00  0.00    +0.070 A 
+ATOM      8  N3  UNL     1      16.712  -0.369   6.494  0.00  0.00    -0.174 NA
+ATOM      9  C8  UNL     1      17.268   0.779   5.861  0.00  0.00    +0.290 C 
+ATOM     10  O4  UNL     1      16.720   1.405   4.918  0.00  0.00    -0.266 OA
+ATOM     11  C9  UNL     1      16.243  -2.606   8.288  0.00  0.00    +0.037 C 
+ATOM     12  C10 UNL     1      16.404  -3.903   9.079  0.00  0.00    +0.005 C 
+ATOM     13  C11 UNL     1      17.036  -3.614  10.436  0.00  0.00    +0.005 C 
+ATOM     14  C12 UNL     1      18.455  -3.071  10.253  0.00  0.00    +0.038 C 
+ENDROOT
+BRANCH   1  16
+ATOM     15  O1  UNL     1      20.051   2.182   5.083  0.00  0.00    -0.143 OA
+ATOM     16  N1  UNL     1      19.445   2.151   6.172  0.00  0.00    -0.025 NA
+ENDBRANCH   1  16
+BRANCH   4  17
+ATOM     17  N2  UNL     1      20.799  -1.272  10.117  0.00  0.00    -0.128 N 
+BRANCH  17  18
+ATOM     18  O2  UNL     1      21.628  -2.336   9.981  0.00  0.00    -0.262 OA
+ATOM     19  H2  UNL     1      22.330  -2.032   9.352  0.00  0.00    +0.247 HD
+ENDBRANCH  17  18
+BRANCH  17  20
+ATOM     20  O3  UNL     1      21.065  -0.355  11.079  0.00  0.00    -0.262 OA
+ATOM     21  H3  UNL     1      21.714   0.270  10.666  0.00  0.00    +0.247 HD
+ENDBRANCH  17  20
+ENDBRANCH   4  17
+TORSDOF 4
+ENDMDL

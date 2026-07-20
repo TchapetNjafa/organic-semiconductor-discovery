@@ -12,8 +12,8 @@ If you use this code or data, please cite the dataset and the relevant paper.
                {PubChemQC} {PCE\_SAScore} analysis with a chemical-validity gate},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.18201813},
-  url       = {https://doi.org/10.5281/zenodo.18201813}
+  doi       = {10.5281/zenodo.18201812},
+  url       = {https://doi.org/10.5281/zenodo.18201812}
 }
 ```
 
@@ -33,16 +33,18 @@ If you use this code or data, please cite the dataset and the relevant paper.
 }
 ```
 
-## Paper 2 — biosensing / multifunctional (Sensors and Actuators B, in preparation)
+## Paper 2 — biosensing / multifunctional (J. Chem. Inf. Model., in preparation)
 
 ```bibtex
 @article{mvoto_biosensing,
-  title   = {[Paper 2 title -- to be finalised]},
+  title   = {Predicted Protein Binding and Optical Environment-Sensitivity Select
+             Different Subsets of Organic-Semiconductor Candidates: A
+             Multi-Objective Computational Evaluation},
   author  = {Mvoto Kongo, Patrick Sorrel and Teguia Kouam, Steve Cabrel and
              Tchapet Njafa, Jean-Pierre and Nana Engo, Serge Guy},
-  journal = {Sensors and Actuators B: Chemical},
+  journal = {Journal of Chemical Information and Modeling},
   year    = {2026},
-  publisher = {Elsevier},
+  publisher = {American Chemical Society},
   note    = {In preparation}
 }
 ```
@@ -52,4 +54,4 @@ If you use this code or data, please cite the dataset and the relevant paper.
 Mvoto Kongo, P. S., Teguia Kouam, S. C., Tchapet Njafa, J.-P., & Nana Engo, S. G.
 (2026). *Data and code for multifunctional organic-semiconductor screening:
 PubChemQC PCE_SAScore analysis with a chemical-validity gate* [Data set]. Zenodo.
-https://doi.org/10.5281/zenodo.18201813
+https://doi.org/10.5281/zenodo.18201812
