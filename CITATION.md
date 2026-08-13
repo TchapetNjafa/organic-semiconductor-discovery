@@ -33,7 +33,7 @@ If you use this code or data, please cite the dataset and the relevant paper.
 }
 ```
 
-## Paper 2 — biosensing / multifunctional (J. Chem. Inf. Model., in preparation)
+## Paper 2 — biosensing / multifunctional (RSC Journal of Materials Chemistry C, submitted)
 
 ```bibtex
 @article{mvoto_biosensing,
@@ -42,10 +42,10 @@ If you use this code or data, please cite the dataset and the relevant paper.
              Multi-Objective Computational Evaluation},
   author  = {Mvoto Kongo, Patrick Sorrel and Teguia Kouam, Steve Cabrel and
              Tchapet Njafa, Jean-Pierre and Nana Engo, Serge Guy},
-  journal = {Journal of Chemical Information and Modeling},
+  journal = {Journal of Materials Chemistry C},
   year    = {2026},
-  publisher = {American Chemical Society},
-  note    = {In preparation}
+  publisher = {Royal Society of Chemistry},
+  note    = {Submitted}
 }
 ```
 

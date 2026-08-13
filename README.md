@@ -13,7 +13,7 @@ PubChemQC database.
 - **Paper 2 (biosensing / multifunctional):** *Predicted Protein Binding and
   Optical Environment-Sensitivity Select Different Subsets of
   Organic-Semiconductor Candidates: A Multi-Objective Computational Evaluation* —
-  in preparation for the **Journal of Chemical Information and Modeling** (ACS),
+  submitted to **RSC Journal of Materials Chemistry C**,
   evaluating seven candidates on two independent axes.
 
 ---
@@ -109,9 +109,19 @@ organic-semiconductor-discovery/
 │   │   ├── run_tddft_scan.py            # TD-DFT solvatochromic scan (ORCA)
 │   │   ├── render_pose.py, crop_pose.py # docking-pose figure
 │   │   ├── generate_figures{,2}.py, make_si_table.py, figstyle_p2.py
-│   ├── data/                            # docking + solvatochromic result CSVs, geometries
-│   ├── figures/                         # the 7 manuscript figures (PDF + PNG)
-│   ├── docking_outputs/                 # ligands, per-mode logs, docked poses
+│   │   ├── dock_gap_candidates_apo.py   # apo redock, 3 gap candidates
+│   │   ├── multiseed_variance.py        # seed-to-seed docking spread
+│   │   ├── run_tddft_diffuse_basis.py   # 6-31+G* diffuse-basis rerun
+│   │   ├── run_tddft_scan_gap_candidates.py
+│   │   ├── optimize_gap_geometries.py   # ORCA opt, 3 gap candidates
+│   │   ├── correlation_dipole_shift.py  # dipole vs solvatochromic shift, Spearman
+│   │   ├── oscillator_window_bound.py   # f-ceiling of the 8-root window
+│   │   └── generate_figures_JMC-C.py, generate_figures_modern-V2.py
+│   ├── data/
+│   │   ├── geometries/                  # 7 optimized B3LYP/6-31G* structures
+│   │   └── geometries_gap/              # 3 gap candidates (5081, 20549, 23424)
+│   ├── docking_outputs/                 # ligands, docked poses (PDBQT)
+│   │   └── poses_multiseed/             # 84 poses from the multi-seed run
 │   └── {DOCKING,TDDFT}_METHODS_NOTE.md  # full protocols
 │       # raw ORCA output (145 MB) is on the Zenodo deposit only
 │
@@ -126,6 +136,20 @@ organic-semiconductor-discovery/
 
 The master dataset (`dataset_pubchemqc_opv_17458.csv`, ~12 MB) is distributed via
 the Zenodo deposit; place it under `data/` to run the pipeline.
+
+### What is here, and what is on Zenodo
+
+This repository is the **code** record. Its `.gitignore` deliberately excludes bulk
+data (`*.csv`, `*.log`) and rendered figures (`*.pdf`, `*.png`), so the result tables,
+per-mode docking logs and manuscript figures are **not** tracked here even when they
+exist in a local working copy. What is tracked: the analysis scripts, the optimized
+molecular geometries (`.xyz`) and the docked poses (`.pdbqt`).
+
+The **complete** record — every CSV, every docking log, the ORCA optimization outputs
+and the figures — is archived on Zenodo under concept DOI
+[10.5281/zenodo.18201812](https://doi.org/10.5281/zenodo.18201812). Reproducing the
+manuscript's numbers requires the Zenodo archive; this repository alone is not
+sufficient. Cite the DOI when the data is what matters.
 
 ---
 

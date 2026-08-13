@@ -1,0 +1,4 @@
+! B3LYP 6-31G* Opt TightSCF
+%pal nprocs 8 end
+%maxcore 3500
+* xyzfile 0 1 9168_guess.xyz
