@@ -1,0 +1,31 @@
+PubChemQC input archive checksum
+===============================
+
+The screening stage (scharber_recompute.py) consumes the property table extracted
+from one PubChemQC shard archive. That archive is redistributed by the PubChemQC
+project and is not duplicated here; this file identifies it exactly so that any
+recomputation can confirm it is reading the same input bytes.
+
+  file    Compound_000000001_000025000_CHNOPSFClNaKMgCa500.tar.xz
+  size    50936064 bytes
+  sha256  6f02d7b8d39bfc97885a52ca2b55f6599e09a27b601bf5da092d94ed4b517a69
+  entries 87292
+  internal timestamps  2018-05-08 .. 2021-03-07
+  release              PubChemQC B3LYP/6-31G*//PM6 ver1.0.0 (announced 2022-08-05)
+  local copy dated     2026-01-20
+
+Source
+  PubChemQC B3LYP/6-31G*//PM6 dataset, CHNOPSFClNaKMgCa500 subset
+  https://nakatamaho.riken.jp/pubchemqc.riken.jp/b3lyp_pm6_datasets.html
+  Nakata, Maeda, Shimazaki & Hashimoto, J. Chem. Inf. Model. 2023, 63, 5734-5754
+  doi:10.1021/acs.jcim.3c00899
+  Licensed CC BY 4.0.
+
+Working set
+  Compound identifiers 1..24999 of that archive, keeping every entry with a
+  .B3LYP@PM6.S0.json record: 17458 molecules. 7541 identifiers in the interval
+  carry no such record. No sampling, no random seed; the set is reproducible from
+  the identifier range alone.
+
+Verify with
+  sha256sum Compound_000000001_000025000_CHNOPSFClNaKMgCa500.tar.xz

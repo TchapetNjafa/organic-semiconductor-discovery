@@ -1,0 +1,23 @@
+# Pinned dependencies for the Paper-1 screening pipeline.
+#
+# These are the exact versions used to produce every number, figure and table in
+# the manuscript (screen_full.csv, summary.json, robustness.json and everything
+# generated from them). Pinned rather than lower-bounded so the deposit is
+# reproducible: referee point 2.9.
+#
+# Python 3.12.3
+#
+# Install with:
+#   python -m venv venv && . venv/bin/activate
+#   pip install -r requirements.txt
+#   python scharber_recompute.py
+#
+# Only these five packages are needed to reproduce the screen. The docking and
+# machine-learning dependencies of the wider project are deliberately absent:
+# no model is trained anywhere in this work.
+
+numpy==2.3.5
+scipy==1.16.3
+pandas==3.0.2
+matplotlib==3.9.3
+rdkit==2026.03.2

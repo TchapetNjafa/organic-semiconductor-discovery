@@ -69,6 +69,17 @@ Thumbs.db
 # Except small example files
 !example_*.csv
 
+# Except the small inputs the Paper-1 pipeline needs to run from a clone, and the
+# small result tables a reader may want without running anything. The 12 MB
+# property table and the two large regenerable outputs (screen_full.csv,
+# genuine_osc_ranked.csv) stay Zenodo-only; see
+# paper1_opv_screening/data/README_DATA.txt.
+!paper1_opv_screening/data/ASTMG173.csv
+!paper1_opv_screening/data/reorganization_energies_corrected.csv
+!paper1_opv_screening/viable_view_a_metric.csv
+!paper1_opv_screening/viable_view_b_stability_screened.csv
+!paper1_opv_screening/reorganization_energies.csv
+
 # Compiled outputs
 *.pdf
 *.png
@@ -79,6 +90,9 @@ Thumbs.db
 !figures/*.pdf
 !figures/*.png
 !figures/*.jpg
+
+# Except the Paper-1 manuscript figures (vector only; PNG duplicates are on Zenodo)
+!paper1_opv_screening/figures/*.pdf
 
 # LaTeX
 *.aux

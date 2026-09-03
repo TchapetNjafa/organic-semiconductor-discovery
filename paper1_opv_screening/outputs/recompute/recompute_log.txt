@@ -1,0 +1,143 @@
+==============================================================================
+Paper 1 -- Scharber stage, recomputed from a documented implementation
+==============================================================================
+
+[1] AM1.5G spectrum: 2002 points, 280-4000 nm
+    integrated irradiance = 1000.37 W/m^2   (ASTM G173-03 nominal 1000.37; deviation 0.00)
+    J_SC(E_g = 1.1 eV, EQE = 0.65) =  287.49 A/m^2
+    J_SC(E_g = 1.4 eV, EQE = 0.65) =  213.73 A/m^2
+    J_SC(E_g = 1.9 eV, EQE = 0.65) =  110.29 A/m^2
+    J_SC(E_g = 2.2 eV, EQE = 0.65) =   69.03 A/m^2
+    J_SC(E_g = 3.0 eV, EQE = 0.65) =   12.08 A/m^2
+    (Scharber 2006 reports ~200 A/m^2 at E_g = 1.4 eV for EQE = 0.65)
+
+[2] dataset: dataset_pubchemqc_opv_17458.csv  ->  17458 molecules
+
+[3] scenarios, gates and photovoltaic quantities
+
+    === STRICT: molecule is the narrower-gap absorber ===
+    scenario D (molecule as donor, partner PCBM, E_g partner 1.8 eV)
+      G1s E_g(mol) <= 1.8 eV                 :     31
+      G2 E_CT <= E_g(mol)                    :  17420
+      G3 V_OC > 0                            :  17430
+      G4 LUMO offset >= 0.3 eV            :  17369
+      all gates                              :     14
+    scenario A (molecule as acceptor, partner PCDTBT, E_g partner 1.9 eV)
+      G1s E_g(mol) <= 1.9 eV                 :     33
+      G2 E_CT <= E_g(mol)                    :  15017
+      G3 V_OC > 0                            :  17456
+      G4 LUMO offset >= 0.3 eV            :     17
+      all gates                              :      2
+      passing in at least one scenario        :     16  (0.09 %)
+      FF = 0.65        max PCE  13.67 %   n(PCE > 10 %) =    2
+      FF = Green n=1   max PCE  18.88 %   n(PCE > 10 %) =    6
+
+    === COMPLEMENTARY: blend onset = min(E_g), molecule in window ===
+    scenario D (molecule as donor, partner PCBM, E_g partner 1.8 eV)
+      G1c 1.1 <= E_g(mol) <= 2.2 eV          :     41
+      G2 E_CT <= E_g(mol)                    :  17420
+      G3 V_OC > 0                            :  17430
+      G4 LUMO offset >= 0.3 eV            :  17369
+      all gates                              :     23
+    scenario A (molecule as acceptor, partner PCDTBT, E_g partner 1.9 eV)
+      G1c 1.1 <= E_g(mol) <= 2.2 eV          :     41
+      G2 E_CT <= E_g(mol)                    :  15017
+      G3 V_OC > 0                            :  17456
+      G4 LUMO offset >= 0.3 eV            :     17
+      all gates                              :      2
+      passing in at least one scenario        :     25  (0.14 %)
+      FF = 0.65        max PCE  13.67 %   n(PCE > 10 %) =    3
+      FF = Green n=1   max PCE  18.88 %   n(PCE > 10 %) =   11
+
+[4] chemical gates
+    chemically valid                          :  10215   rejected 7243
+    valid and free of reactive groups         :  10162
+      R3_no_ring               4034
+      R4_no_aromatic_ring      2289
+      R1_multifragment          838
+      R6_low_conjugation         70
+      R5_too_small                9
+      R2_metal                    2
+      unparsable                  1
+
+[5] wrote outputs/recompute/screen_full.csv (17458 rows, 36 columns)
+
+[6] RANKING of chemically valid, stable, physically admissible molecules
+    Four variants: 2 absorber conventions x 2 fill-factor conventions.
+
+    --- strict_FF065   (absorber: strict, FF: 0.65 fixed) ---
+    admissible pool = 4   max PCE over all molecules = 13.67 %
+    rank  id      formula          PCE_SAScore   PCE     SAScore  E_g
+       1  9168    C26H16                 +1.55    8.46     6.91  1.771
+       2  9104    C32H18                 -3.47    3.60     7.07  1.720
+       3  9175    C22H16                 -5.11    1.51     6.62  1.736
+       4  23450   C7H7NO2                -6.60    0.34     6.94  1.791
+    molecule 1712 (submitted lead): NOT in the admissible pool
+
+    --- strict_FFgreen   (absorber: strict, FF: Green n=1) ---
+    admissible pool = 4   max PCE over all molecules = 18.88 %
+    rank  id      formula          PCE_SAScore   PCE     SAScore  E_g
+       1  9168    C26H16                 +4.55   11.45     6.91  1.771
+       2  9104    C32H18                 -2.82    4.25     7.07  1.720
+       3  9175    C22H16                 -5.23    1.39     6.62  1.736
+       4  23450   C7H7NO2                -6.79    0.15     6.94  1.791
+    molecule 1712 (submitted lead): NOT in the admissible pool
+
+    --- compl_FF065   (absorber: compl, FF: 0.65 fixed) ---
+    admissible pool = 9   max PCE over all molecules = 13.67 %
+    rank  id      formula          PCE_SAScore   PCE     SAScore  E_g
+       1  19598   C9H7NO4                +2.08    8.58     6.50  1.897
+       2  22936   C22H17N3O6S            +1.99    9.15     7.15  2.044
+       3  21736   C12H11NO6              +1.75    8.56     6.81  1.946
+       4  9168    C26H16                 +1.55    8.46     6.91  1.771
+       5  9139    C32H18                 -2.23    4.97     7.20  2.180
+       6  9406    C32H18                 -2.49    4.61     7.10  1.992
+       7  9104    C32H18                 -3.47    3.60     7.07  1.720
+       8  9175    C22H16                 -5.11    1.51     6.62  1.736
+       9  23450   C7H7NO2                -6.60    0.34     6.94  1.791
+    molecule 1712 (submitted lead): NOT in the admissible pool
+
+    --- compl_FFgreen   (absorber: compl, FF: Green n=1) ---
+    admissible pool = 9   max PCE over all molecules = 18.88 %
+    rank  id      formula          PCE_SAScore   PCE     SAScore  E_g
+       1  22936   C22H17N3O6S            +5.38   12.54     7.15  2.044
+       2  19598   C9H7NO4                +5.19   11.69     6.50  1.897
+       3  21736   C12H11NO6              +4.84   11.66     6.81  1.946
+       4  9168    C26H16                 +4.55   11.45     6.91  1.771
+       5  9139    C32H18                 -0.87    6.33     7.20  2.180
+       6  9406    C32H18                 -1.31    5.80     7.10  1.992
+       7  9104    C32H18                 -2.82    4.25     7.07  1.720
+       8  9175    C22H16                 -5.23    1.39     6.62  1.736
+       9  23450   C7H7NO2                -6.79    0.15     6.94  1.791
+    molecule 1712 (submitted lead): NOT in the admissible pool
+
+    first place by variant:
+      strict_FF065     -> 9168
+      strict_FFgreen   -> 9168
+      compl_FF065      -> 19598
+      compl_FFgreen    -> 22936
+    -> ranking is NOT robust to the two modelling freedoms (3 distinct first places)
+
+[7] threshold cascade (for continuity with the submitted version;
+    the paper's claim is now the ranking above, not this threshold)
+    strict_FF065     PCE_SAScore > 0:    8 -> valid    2 -> stable    1   ids=[9168]
+    strict_FFgreen   PCE_SAScore > 0:    8 -> valid    2 -> stable    1   ids=[9168]
+    compl_FF065      PCE_SAScore > 0:   13 -> valid    6 -> stable    4   ids=[9168, 19598, 21736, 22936]
+    compl_FFgreen    PCE_SAScore > 0:   13 -> valid    6 -> stable    4   ids=[9168, 19598, 21736, 22936]
+
+[8] orthogonality control: does a gap pre-filter remove the artifacts?
+    molecules with E_g in [1.1, 2.2] eV: 41
+      977    O2         E_g 1.965 eV  inside window: True   (R3_no_ring)
+      7801   C12H10O4   E_g 1.467 eV  inside window: True   (R1_multifragment)
+      11029  CMgO3      E_g 1.687 eV  inside window: True   (R1_multifragment)
+    -> 3 of 3 non-semiconductor artifacts lie INSIDE the window;
+       an energetic pre-filter cannot substitute for a structural one.
+
+[9] robustness of the surviving set across the four conventions
+    strict_FF065     above threshold, valid and stable: [9168]
+    strict_FFgreen   above threshold, valid and stable: [9168]
+    compl_FF065      above threshold, valid and stable: [9168, 19598, 21736, 22936]
+    compl_FFgreen    above threshold, valid and stable: [9168, 19598, 21736, 22936]
+    intersection of all four: [9168]
+    union of all four       : [9168, 19598, 21736, 22936]
+    molecule 1712: LUMO -3.823 eV gives -0.123 eV driving force vs PCBM (-3.70) and +0.223 eV vs PCDTBT (-3.60); both below the 0.3 eV requirement

@@ -1,0 +1,35 @@
+{
+  "intersection_all_variants": [
+    9168
+  ],
+  "union_all_variants": [
+    9168,
+    19598,
+    21736,
+    22936
+  ],
+  "mol_1712_excluded_reason": "LUMO -3.823 eV gives -0.123 eV driving force vs PCBM (-3.70) and +0.223 eV vs PCDTBT (-3.60); both below the 0.3 eV requirement",
+  "robust_lead": [
+    9168
+  ],
+  "per_variant_stable_viable": {
+    "strict_FF065": [
+      9168
+    ],
+    "strict_FFgreen": [
+      9168
+    ],
+    "compl_FF065": [
+      9168,
+      19598,
+      21736,
+      22936
+    ],
+    "compl_FFgreen": [
+      9168,
+      19598,
+      21736,
+      22936
+    ]
+  }
+}

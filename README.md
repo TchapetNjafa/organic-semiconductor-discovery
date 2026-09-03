@@ -21,29 +21,73 @@ PubChemQC database.
 ## What Paper 1 shows
 
 We screen 17,458 molecules with `PCE_SAScore = PCE − SAScore` (Scharber efficiency
-minus the RDKit synthetic-accessibility score). Seven molecules score above zero —
-but the metric reads only computed descriptors, so the raw "viable" set is not a
-candidate list:
+minus the RDKit synthetic-accessibility score). The four physical gates admit **25
+molecule–reference pairings** under the complementary absorber convention and 16
+under the strict one — but the metric reads only computed descriptors, so what it
+admits is not a candidate list:
 
-- **Three are not organic semiconductors:** molecular oxygen (`977`), a magnesium
-  carbonate salt (`11029`), and a hydroquinone–benzoquinone cocrystal (`7801`).
-- **Two are reactive azides** (`17851`, `20778`) and one carries a **nitroso**
-  group (`4550`).
+- **14 of the 25 are not organic semiconductors**, and 11 of those are
+  disconnected ion pairs: calcium thiosulfate (`24964`) ranks second under one
+  convention, magnesium carbonate (`11029`) third under the other, plus a sodium
+  dinitrophenolate, a folate disodium salt and six quaternary ammonium or iminium
+  chlorides.
+- **Molecular oxygen** (`977`, 1.965 eV) and a **quinhydrone cocrystal** (`7801`,
+  1.467 eV) both absorb inside the useful window and are removed only by
+  structural rules. A band-gap pre-filter removes **no** artifact — the energetic
+  and structural criteria are independent. O₂'s tabulated gap is a spin-restricted
+  singlet, not its triplet ground state.
+- **Two admitted molecules carry a nitroso group**: `4550`, which ranks *first*
+  among all admitted pairings under every convention tested, and `12919`.
 
-A chemical-validity filter and a reactive-group screen reduce the viable set
-**7 → 4 → 1**. Only molecule `1712` — a stable, conventionally conjugated
-molecule — survives, with a modest predicted PCE (8.5%). Two further findings:
-the corrected four-point reorganization energy of the azido-triazines is
-**negative** (unphysical; a sign of instability), and simple heteroatom-composition
-descriptors correlate only **weakly** with frontier-orbital energies (|r| ≤ 0.34).
+The cascade is **25 → 11 → 9 → 4** (admitted → chemically valid → passes the
+reactive-group screen → above threshold), or 16 → 5 → 4 → 1 under the strict
+convention. **First place is convention-dependent** — 9168 / 9168 / 19598 / 22936
+across the four (absorber × fill-factor) combinations — and only molecule `9168`
+(C₂₆H₁₆, an unsubstituted polycyclic aromatic hydrocarbon) is positive under all
+four, with a small margin.
+
+Three further findings:
+
+- **Molecule `1712` is not admitted.** Its −3.823 eV LUMO gives −0.123 eV of
+  driving force against the PCBM reference. Earlier versions of this repository
+  described it as the single surviving candidate; that is superseded.
+- Three of the four molecules above threshold are ***o*-quinone tautomers**
+  (`19598`, `21736`, `23450`) and the fourth is an **anthraquinone sulfonic-acid
+  dye** (`22936`). All pass every rule in the filter.
+- **The screen admits none of the nine established organic semiconductors in the
+  same shard** (benzene through pentacene): computed Kohn–Sham gaps of
+  2.397–6.781 eV against pentacene's ≈1.8 eV measured optical gap. This bounds how
+  much weight the admitted set can carry.
+
+The corrected four-point reorganization energy of the azido-triazines is
+**negative** (unphysical; a sign of instability under ionization), and heteroatom
+composition correlates only **weakly** with frontier-orbital energies
+(|r| ≤ 0.34, n = 17,457).
 
 **The methodological point:** a chemical-validity gate belongs as a standard step
 in descriptor-based materials screening, and the gap between the pre- and post-gate
 sets is itself a result.
 
+### Reproducing Paper 1
+
+```bash
+cd paper1_opv_screening
+python -m pip install -r requirements.txt
+# the 12 MB property table is Zenodo-only; see data/README_DATA.txt
+bash run_all.sh
+```
+
+`run_all.sh` regenerates every Paper-1 number, figure and table. Both filter
+scripts re-derive their rules from the SMILES and assert agreement with the
+pipeline's own columns on all 17,458 rows, so a broken edit fails loudly rather
+than silently changing a result. No supervised model is trained anywhere in the
+pipeline.
+
 > Note: earlier versions of this repository presented a "top 7 candidates for
 > synthesis" narrative and some uncorrected statistics (e.g. reorganization
-> energies with a ~0.35 eV mean). Those are **superseded** by the results above.
+> energies with a ~0.35 eV mean, and efficiencies from a photovoltaic stage whose
+> incident power was 900.1 W m⁻² with no E_CT ≤ E_g check). Those are
+> **superseded** by the results above.
 
 ---
 
@@ -94,14 +138,22 @@ organic-semiconductor-discovery/
 ├── requirements.txt
 ├── COMPUTATIONAL_WORKFLOW.md            # end-to-end methodology
 │
-├── paper1_opv_screening/               # CURRENT Paper-1 material
-│   ├── scripts/
-│   │   ├── filter_genuine_osc.py        # chemical-validity filter
-│   │   ├── stability_screen.py          # reactive-group screen
-│   │   ├── figstyle.py                  # shared figure style
-│   │   └── generate_fig{1,2,3,4,6,7,8}*.py
-│   ├── data/                            # genuine_osc_ranked, viable_view_a/b
-│   └── figures/                         # the 8 manuscript figures (PDF + PNG)
+├── paper1_opv_screening/               # CURRENT Paper-1 material, self-contained
+│   ├── run_all.sh                       # regenerates every number and artifact
+│   ├── scharber_recompute.py            # screening stage, gates G1-G4
+│   ├── filter_genuine_osc.py            # chemical-validity filter R1-R6
+│   ├── stability_screen.py              # reactive-group screen R7
+│   ├── regen_tables.py                  # manuscript tables
+│   ├── regen_figures.py, regen_fig6.py, regen_fig7.py
+│   ├── figstyle.py                      # shared figure style
+│   ├── requirements.txt                 # 5 pinned versions, Python 3.12.3
+│   ├── INPUT_CHECKSUM.txt               # SHA-256 of the PubChemQC shard archive
+│   ├── MANIFEST.txt                     # SHA-256 + bytes for every file
+│   ├── data/                            # ASTM G173 spectrum, corrected lambda table
+│   │                                    # (12 MB property table: Zenodo only)
+│   ├── outputs/recompute/               # screen_full.csv, summary, robustness, log
+│   ├── figures/                         # manuscript figures (PDF; PNG on Zenodo)
+│   └── tables/                          # manuscript tables (LaTeX)
 │
 ├── paper2_biosensing_screening/        # CURRENT Paper-2 material
 │   ├── scripts/
