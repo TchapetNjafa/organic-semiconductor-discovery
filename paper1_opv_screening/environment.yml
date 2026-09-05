@@ -1,0 +1,25 @@
+# Conda environment for the Paper-1 screening pipeline.
+#
+# Equivalent to requirements.txt: the same five packages at the same pinned
+# versions used to produce every number, figure and table in the manuscript.
+# Provided so the environment can be recreated in one command on a machine
+# without a matching system Python:
+#
+#   conda env create -f environment.yml
+#   conda activate paper1-opv-screening
+#   bash run_all.sh
+#
+# rdkit is on conda-forge, not in the defaults channel, so conda-forge is listed
+# first and the defaults channel is not used. If you prefer pip, use
+# requirements.txt instead; the two are kept in step deliberately.
+
+name: paper1-opv-screening
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.3
+  - numpy=2.3.5
+  - scipy=1.16.3
+  - pandas=3.0.2
+  - matplotlib-base=3.9.3
+  - rdkit=2026.03.2
