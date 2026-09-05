@@ -112,7 +112,7 @@ weight the admitted set can carry. See `tables/tab_comparators.tex`.
 ## Citation
 
 If you use this deposit, cite the manuscript and the Zenodo record
-(DOI 10.5281/zenodo.18201813, concept DOI 10.5281/zenodo.18201812). Mirror:
+(concept DOI 10.5281/zenodo.18201812, resolves to the latest version). Mirror:
 <https://github.com/TchapetNjafa/organic-semiconductor-discovery>.
 
 Licence: see `LICENSE` in the repository root (code) — the PubChemQC source data
