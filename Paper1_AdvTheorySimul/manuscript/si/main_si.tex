@@ -134,10 +134,16 @@ error that the in-class leave-one-out error does not describe. The table, with t
 \input{tables/ST3}
 
 \section{Formal verification}
-The three statements of the Methods were proved in Lean~4 (v4.34.1) with Mathlib. The build completes with no
-\texttt{sorry}, no \texttt{admit} and no added axiom. An independent reader compared each formal statement with its
-intended meaning and found all three faithful.
-% L-2026-10-18-10; gate re-run 2026-10-18: LEAN GATE PASS
+The three statements of the Methods were proved in Lean~4 (toolchain v4.34.1) with Mathlib at commit
+\texttt{d13f23b723b8a846827a245b89c10fc7d3f11612} (tag v4.34.1). The build completes with no \texttt{sorry}, no
+\texttt{admit} and no added axiom: \texttt{\#print axioms} reports, for each of the seven theorems below, only Lean's
+standard axioms \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}. An independent reader compared each
+formal statement with its intended meaning and found all three faithful. Not formalised: repeated cut-offs in a cascade
+(harmless, not stated), infinite families of conventions, Green's fill factor for $v < 0$, conditions under which the
+robust set is non-empty (false in general, see F2), and every numerical result of the paper, which rests on computation
+and is checked through the analysis record instead. The Lean project is part of the code deposit
+(DOI 10.5281/zenodo.18201812).
+% L-2026-10-18-10; gate re-run 2026-10-18: LEAN GATE PASS; #print axioms run 2026-10-18 (L4)
 
 \paragraph{F1, order invariance.} \texttt{successiveFilter s ps} applies the pass/fail predicates \texttt{ps} to the
 finite set \texttt{s} one after another. \texttt{successiveFilter\_eq\_filter} shows that the result is the set of
