@@ -1,0 +1,13 @@
+joined shard n=15952  halogenated 3467 (21.7 %)  F 854 Cl 2753 Br 0 I 0
+KS window                n=   33 hal=  12 ( 36.4 %)  Cl 12 F 1 Br 0 I 0  odds ratio 2.06  Fisher p=5.48e-02
+S1 window                n=  559 hal= 124 ( 22.2 %)  Cl 107 F 19 Br 0 I 0  odds ratio 1.03  Fisher p=7.94e-01
+bright window            n=  407 hal= 152 ( 37.3 %)  Cl 144 F 15 Br 0 I 0  odds ratio 2.20  Fisher p=4.95e-13
+S1<1 eV (CT collapse)    n=  742 hal= 456 ( 61.5 %)  Cl 448 F 26 Br 0 I 0  odds ratio 6.46  Fisher p=1.78e-127
+
+# fragments / chloride counter-ions (SMILES with '.')
+shard          n=15952 multi-fragment   4.5 %  Cl- counter-ion   2.9 %  covalent Cl  14.4 %  F   5.4 %
+KS window      n=   33 multi-fragment  48.5 %  Cl- counter-ion  36.4 %  covalent Cl   0.0 %  F   3.0 %
+S1 window      n=  559 multi-fragment  10.0 %  Cl- counter-ion   5.9 %  covalent Cl  13.2 %  F   3.4 %
+bright window  n=  407 multi-fragment  39.8 %  Cl- counter-ion  25.6 %  covalent Cl   9.8 %  F   3.7 %
+S1<1 eV        n=  742 multi-fragment  84.4 %  Cl- counter-ion  53.9 %  covalent Cl   6.5 %  F   3.5 %
+single-fragment only: n=15227  S1-window 503  bright-window 245  KS-window 17  S1<1 eV 116

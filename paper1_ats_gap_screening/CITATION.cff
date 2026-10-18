@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the deposit."
+title: "Gap observables in high-throughput OPV screening: code, data and analysis record"
+authors:
+  - family-names: "Mvoto Kongo"
+    given-names: "Patrick Sorrel"
+  - family-names: "Teguia Kouam"
+    given-names: "Steve Cabrel"
+  - family-names: "Tchapet Njafa"
+    given-names: "Jean-Pierre"
+  - family-names: "Nana Engo"
+    given-names: "Serge Guy"
+doi: "10.5281/zenodo.18201812"
+license: MIT
+repository-code: "https://github.com/TchapetNjafa/organic-semiconductor-discovery"

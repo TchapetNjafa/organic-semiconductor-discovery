@@ -1,0 +1,5 @@
+# tool versions recorded 2026-10-18
+codex-cli 0.163.0
+GitHub Copilot CLI 1.0.98.
+kiro-cli 2.24.0
+1.4.2

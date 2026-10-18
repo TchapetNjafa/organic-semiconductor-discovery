@@ -1,0 +1,18 @@
+\begin{table}[h]
+\centering
+\caption{Gap observables computed on the DFT geometries distributed with HOPV15, against the experimental optical gap
+($n = 36$ donor--acceptor small molecules). SD: standard deviation of the signed error. Recall: molecules whose
+experimental and computed gaps both lie in the \qtyrange{1.1}{2.2}{eV} window. LOO MAE: leave-one-out error of a linear
+calibration against experiment.}
+\label{tab:si-std2}
+\begin{tabular}{lrrrrrr}
+\toprule
+Observable & Bias [eV] & MAE [eV] & SD [eV] & $r$ & Recall & LOO MAE [eV]\\
+\midrule
+$\Eks$, B3LYP/def2-SVP & +0.29 & 0.29 & 0.16 & 0.92 & 23/31 & 0.083 \\
+sTDA@B3LYP/6-31G* & -0.02 & 0.21 & 0.26 & 0.75 & 28/31 & 0.141 \\
+XsTDA@B3LYP/6-31G* & +0.24 & 0.25 & 0.29 & 0.69 & 23/31 & 0.157 \\
+sTDA-xTB & +0.76 & 0.76 & 0.12 & 0.89 & 0/31 & 0.103 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,5 @@
+# raw stdout of the 2026-10-18 pentacene validation run (std2_b3lyp.py + PySCF full TDA), copied from the task output
+8671_b3lyp	conv=True	KS=2.209	S1_sTDA=2.094	f=0.0911	S1_XsTDA=2.380	f=0.0704
+PySCF full TDA-B3LYP pentacene (B3LYP geom): [np.float64(2.203), np.float64(2.973), np.float64(3.26)] f [np.float64(0.083), np.float64(0.0), np.float64(0.009)]
+
+[exited with code 0]

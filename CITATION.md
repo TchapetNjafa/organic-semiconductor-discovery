@@ -17,23 +17,20 @@ If you use this code or data, please cite the dataset and the relevant paper.
 }
 ```
 
-## Paper 1 — organic photovoltaics (RSC Digital Discovery, submitted)
+## Paper 1 — organic photovoltaics (manuscript)
 
 ```bibtex
 @article{mvoto_opv_validity,
-  title   = {Efficiency and Accessibility Are Not Enough: Chemical-Validity
-             Filtering in High-Throughput Screening of Organic Photovoltaic
-             Materials},
+  title   = {Class-Dependent Errors of Cheap Band-Gap Observables Undermine
+             High-Throughput Screening of Organic Photovoltaic Absorbers},
   author  = {Mvoto Kongo, Patrick Sorrel and Teguia Kouam, Steve Cabrel and
              Tchapet Njafa, Jean-Pierre and Nana Engo, Serge Guy},
-  journal = {Digital Discovery},
   year    = {2026},
-  publisher = {Royal Society of Chemistry},
-  note    = {Submitted}
+  note    = {Manuscript}
 }
 ```
 
-## Paper 2 — biosensing / multifunctional (RSC Journal of Materials Chemistry C, submitted)
+## Paper 2 — biosensing / multifunctional (manuscript)
 
 ```bibtex
 @article{mvoto_biosensing,
@@ -42,10 +39,8 @@ If you use this code or data, please cite the dataset and the relevant paper.
              Multi-Objective Computational Evaluation},
   author  = {Mvoto Kongo, Patrick Sorrel and Teguia Kouam, Steve Cabrel and
              Tchapet Njafa, Jean-Pierre and Nana Engo, Serge Guy},
-  journal = {Journal of Materials Chemistry C},
   year    = {2026},
-  publisher = {Royal Society of Chemistry},
-  note    = {Submitted}
+  note    = {Manuscript}
 }
 ```
 

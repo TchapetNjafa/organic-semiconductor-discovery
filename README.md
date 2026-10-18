@@ -7,18 +7,20 @@
 Data and code for a two-paper programme built on one high-throughput screen of the
 PubChemQC database.
 
-- **Paper 1 (organic photovoltaics):** *Efficiency and Accessibility Are Not
-  Enough: Chemical-Validity Filtering in High-Throughput Screening of Organic
-  Photovoltaic Materials* — submitted to **RSC Digital Discovery**.
+- **Paper 1 (organic photovoltaics), current version:** *Class-Dependent Errors of
+  Cheap Band-Gap Observables Undermine High-Throughput Screening of Organic
+  Photovoltaic Absorbers* — code, data and analysis record in
+  [`paper1_ats_gap_screening/`](paper1_ats_gap_screening/README.md).
+- **Earlier Paper-1 analysis (PCE_SAScore with a chemical-validity gate):**
+  `paper1_opv_screening/`, described below and kept for reference.
 - **Paper 2 (biosensing / multifunctional):** *Predicted Protein Binding and
   Optical Environment-Sensitivity Select Different Subsets of
-  Organic-Semiconductor Candidates: A Multi-Objective Computational Evaluation* —
-  submitted to **RSC Journal of Materials Chemistry C**,
+  Organic-Semiconductor Candidates: A Multi-Objective Computational Evaluation*,
   evaluating seven candidates on two independent axes.
 
 ---
 
-## What Paper 1 shows
+## What the earlier Paper-1 analysis shows
 
 We screen 17,458 molecules with `PCE_SAScore = PCE − SAScore` (Scharber efficiency
 minus the RDKit synthetic-accessibility score). The four physical gates admit **25
@@ -138,7 +140,8 @@ organic-semiconductor-discovery/
 ├── requirements.txt
 ├── COMPUTATIONAL_WORKFLOW.md            # end-to-end methodology
 │
-├── paper1_opv_screening/               # CURRENT Paper-1 material, self-contained
+├── paper1_ats_gap_screening/           # CURRENT Paper-1 material (see its README)
+├── paper1_opv_screening/               # earlier Paper-1 analysis, self-contained
 │   ├── run_all.sh                       # regenerates every number and artifact
 │   ├── scharber_recompute.py            # screening stage, gates G1-G4
 │   ├── filter_genuine_osc.py            # chemical-validity filter R1-R6

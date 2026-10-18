@@ -1,0 +1,7 @@
+# id name exp_lo exp_hi | KS(PubChemQC) KS-exp_mid | S1(sTDA,UFF) S1-exp_mid
+931 naphthalene 3.97 4.00 | 4.909 +0.924 | 4.141 +0.156
+8418 anthracene  3.27 3.45 | 3.709 +0.349 | 3.236 -0.124
+7080 tetracene   2.60 2.72 | 2.931 +0.271 | 2.608 -0.052
+8671 pentacene   2.12 2.31 | 2.397 +0.182 | 2.228 +0.013
+acenes mean offset: KS +0.431 (sd 0.335) | S1 -0.002 (sd 0.119)
+HOPV15 OPV molecules (n=34): KS(B3LYP/def2-SVP) +0.293 | S1 UFF +0.999 | S1 DFT-geom +0.754  (hopv15-calibration.txt)

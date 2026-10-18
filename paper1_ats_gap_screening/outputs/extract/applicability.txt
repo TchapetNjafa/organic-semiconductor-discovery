@@ -1,0 +1,7 @@
+Mahalanobis 95th-pct LOO threshold (HOPV, n=34): 4.29
+set | n | heavy_atoms median [p5,p95] | frac_conj median [p5,p95] | arom_rings median [p5,p95] | frac_hetero median [p5,p95] | n_S median [p5,p95] | rot_bonds median [p5,p95] | inside domain
+HOPV calibration | 34 | 54.50 [24.65,68.70] | 0.86 [0.64,0.97] | 8.00 [3.00,10.00] | 0.23 [0.12,0.29] | 5.50 [2.00,9.05] | 7.00 [2.00,12.35] | 100 %
+cascade survivors | 37 | 24.00 [10.00,33.20] | 0.92 [0.70,1.00] | 2.00 [1.00,8.00] | 0.26 [0.00,0.40] | 0.00 [0.00,1.20] | 2.00 [0.00,7.20] | 27 %
+valid shard (sample 2000) | 2000 | 15.00 [6.00,29.00] | 0.59 [0.00,1.00] | 1.00 [0.00,3.00] | 0.24 [0.04,0.59] | 0.00 [0.00,1.00] | 3.00 [0.00,11.05] | 18 %
+
+KS range of the calibration fit: [1.605, 3.347] eV; survivors' KS [1.736, 2.629] eV; survivors outside fit range: 0/37

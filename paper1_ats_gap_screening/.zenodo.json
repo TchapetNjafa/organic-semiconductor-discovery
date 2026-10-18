@@ -1,0 +1,19 @@
+{
+  "title": "Gap observables in high-throughput OPV screening: code, data and analysis record",
+  "upload_type": "dataset",
+  "description": "Code, intermediate data and analysis record for the manuscript 'Class-Dependent Errors of Cheap Band-Gap Observables Undermine High-Throughput Screening of Organic Photovoltaic Absorbers'. Compares stored PubChemQC Kohn-Sham gaps with sTDA-xTB excitation energies for 15,952 molecules, calibrates both against HOPV15 experimental optical gaps and four acenes, detects defective database records, and runs a validity-first calibrated Scharber cascade. Includes Lean 4 proofs of three statements about the screen.",
+  "creators": [
+    {"name": "Mvoto Kongo, Patrick Sorrel", "affiliation": "University of Yaounde 1"},
+    {"name": "Teguia Kouam, Steve Cabrel", "affiliation": "University of Douala"},
+    {"name": "Tchapet Njafa, Jean-Pierre", "affiliation": "University of Yaounde 1"},
+    {"name": "Nana Engo, Serge Guy", "affiliation": "University of Yaounde 1"}
+  ],
+  "keywords": ["high-throughput virtual screening", "organic photovoltaics", "optical gap calibration", "database curation", "sTDA-xTB", "PubChemQC", "HOPV15", "Lean 4"],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "related_identifiers": [
+    {"identifier": "https://github.com/TchapetNjafa/organic-semiconductor-discovery", "relation": "isSupplementTo", "scheme": "url"},
+    {"identifier": "10.1038/sdata.2016.86", "relation": "references", "scheme": "doi"},
+    {"identifier": "10.1021/acs.jcim.3c00899", "relation": "references", "scheme": "doi"}
+  ]
+}

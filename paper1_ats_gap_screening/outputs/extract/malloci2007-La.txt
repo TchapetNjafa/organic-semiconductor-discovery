@@ -1,0 +1,9 @@
+# Experimental lowest excitations of neutral acenes transcribed from Malloci, Mulas, Cappellini, Joblin,
+# Chem. Phys. 2007 (10.1016/j.chemphys.2007.07.046; arXiv:0707.3045), Tables 2-5, column "Exp." (read 2026-10-17
+# from the arXiv PDF). Values over media (gas, Ne/Ar matrix, n-heptane, EELS) as listed; midpoint used in the paper.
+molecule      state            exp_values_eV              range        midpoint_used
+naphthalene   1B3u (p, La)     4.45, 4.45, 4.44           4.44-4.45    4.445
+naphthalene   1B2u (alpha, Lb) 3.97, 4.0, 3.98            3.97-4.0     (dark S1; not used in calibration)
+anthracene    1B3u (p, La)     3.27, 3.45, 3.43           3.27-3.45    3.36
+tetracene     1B3u (p, La)     2.62, 2.60, 2.72           2.60-2.72    2.66
+pentacene     1B3u (p, La)     2.12, 2.28, 2.31           2.12-2.31    2.215

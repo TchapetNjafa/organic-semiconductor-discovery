@@ -1,0 +1,2 @@
+dirs 36 | sTDA parsed 36 | XsTDA parsed 36
+summary vs reparsed sTDA mismatches: 0 []
