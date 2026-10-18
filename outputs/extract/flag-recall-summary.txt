@@ -1,0 +1,9 @@
+rows 120 unique 120 status {'ok': 120}
+unflagged sample: defects (recomp-stored > +0.5 eV) 0/120 = 0.000  95% CP [0.000, 0.030]
+dev quantiles (eV): [-2.663, -0.952, -0.47, -0.285, -0.058, 0.159, 0.373]
+records with dev > +0.5: []
+universe (unflagged, single-fragment, 6-35 heavy atoms, not in the 58 checked): 14802
+flagged single-fragment total: 29 | flagged within 6-35 heavy atoms: 27
+point: undetected defects ~0; recall ~ 1.000
+CI low: undetected defects ~0; recall ~ 1.000
+CI high: undetected defects ~448; recall ~ 0.045

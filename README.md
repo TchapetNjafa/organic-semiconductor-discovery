@@ -32,6 +32,7 @@ Every script runs from the repository root as `python -I Paper1_AdvTheorySimul/<
 | `Paper1_AdvTheorySimul/build_stda_all.py`, `join_ks_stda.py` | collect S1 and the lowest bright state (f ≥ 0.01) from the raw spectra; join with the stored gaps |
 | `Paper1_AdvTheorySimul/hopv_stda.py`, `hopv_stda_dftgeom.py` | sTDA-xTB on HOPV15 (UFF and DFT geometries) |
 | `Paper1_AdvTheorySimul/ks_gap_check.py`, `b3lyp_reopt.py`, `std2_b3lyp.py` | PySCF B3LYP recomputations, geomeTRIC re-optimisation, std2 sTDA/XsTDA on a B3LYP ground state |
+| `Paper1_AdvTheorySimul/flag_recall.py` | recall sample of the record check: B3LYP/6-31G* recomputation of 120 unflagged records (seed 11) |
 | `Paper1_AdvTheorySimul/gate_cascade.py`, `applicability.py`, `pipeline/` | validity rules R1–R6, record check, calibrated window, Scharber gates, applicability domain |
 | `Paper1_AdvTheorySimul/make_tables.py`, `make_si_tables.py`, `make_figures.py` | Tables 1–2, Tables S1, S4, S5 and Figures 2–5 from the files in `outputs/extract/` |
 | `Paper1_AdvTheorySimul/formal/` | Lean 4 (v4.34.1) + Mathlib proofs F1–F3 (`lake build`) |

@@ -368,3 +368,22 @@ the checker mis-attributed it; the abstract now carries the statement); kiro-cli
 errors (word count, quote location) were caught only because each finding was re-opened against the file (rule 18).
 **Caveats.** The attrition 39 → 34 HOPV molecules (3 DSSC, 2 UFF embed failures) was not stated; now in Results 2.2 (recount from hopv15_records.csv + hopv15_stda.csv).
 **Claim link.** Abstract, Introduction, Discussion, Results 2.1/2.2/2.5, Fig. 5 caption, cover letter.
+
+## L-2026-10-18-26 — Record-check recall sample: 0 of 120 unflagged records store a gap too small (A1/A5)
+
+**Method.** `Paper1_AdvTheorySimul/flag_recall.py`: 120 records drawn (seed 11) from unflagged single-fragment records with
+6–35 heavy atoms, excluding the 58 of `-09`; same protocol as `-09` (RDKit ETKDG seed 42 + UFF ≤ 500 steps, PySCF B3LYP/6-31G*
+single point); defect = recomputed − stored > +0.5 eV. Detached, 4 shards, resumable → `outputs/extract/flag-recall/result_*.tsv`;
+summary `outputs/extract/flag-recall-summary.txt`.
+**Verified against.** the four raw `result_*.tsv` files (120 rows, 120 unique, all `ok`); universe recounted from
+`ks_vs_stda_joined.csv` ⋈ `gate_cascade.csv` SMILES (14,802 records), not from the run log.
+**Result.** Defects 0/120 (Clopper–Pearson 95 % CI 0–3.0 %). Recomputed − stored [eV]: min −2.66, p5 −0.95, median −0.29, p95 +0.16,
+max +0.37. P(0/120 | 10 % rate) = 3e-6. Upper bound on undetected defects of this type: 0.030 × 14,802 ≈ 450, i.e. flag recall
+between ~5 % and 100 % (point estimate 100 %, 21 confirmed flags).
+**Interpretation.** Records whose stored gap is far too small for their structure — the defect the record check targets — are
+rare among unflagged records (< 3 % at 95 % confidence), and a 10 % rate of this defect type is excluded. The sample cannot bound
+recall from below in a useful way: with 14,802 unflagged records, even a 3 % rate would leave hundreds undetected. The opposite
+deviation (stored gap too large) is not tested: UFF geometries lower gaps systematically (median −0.29 eV, as for the `-09`
+controls), so negative deviations do not separate defects from geometry.
+**Caveats.** One-sided criterion; 6–35 heavy atoms only; UFF geometry; n = 120.
+**Claim link.** C5 (record check: rarity of missed defects of this type; recall not bounded); Discussion outlook sentence.
