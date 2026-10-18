@@ -148,22 +148,7 @@ opposite sign. 9168's record defect is now closed without the geometry caveat (2
 flag recall unknown (only flagged and in-range controls sampled); 31 flags in 15,952 = 0.2 % of records.
 **Claim link.** C-central (v2 finding ii) · C-9168 (closed) · C-artifacts. Supersedes caveat of `-03`.
 
-## L-2026-10-18-10 — Formal verification record: F1–F3 machine-checked (Lean 4, Mathlib v4.34.1)
-
-**Method.** Lake project `Paper1_AdvTheorySimul/formal/` (codex, effort high); gate
-`manuscript_gate.sh --lean` re-run locally; independent statement-fidelity check by kiro-cli (effort high).
-→ `outputs/cli-agent/L1-codex-lean.md`, `outputs/critical-reviews/lean-fidelity.md`.
-**Result.** lake-build 0, sorry 0, admit 0, axiom 0 → LEAN GATE PASS. Theorems: `successiveFilter_eq_filter`,
-`successiveFilter_perm` (F1); `mem_Robust`, `Robust_subset`, `Robust_empty_example` (F2); `FF_bounds`
-(0 < FF < 1 for v ≥ 0), `FF_strictMonoOn` (strictly increasing on [1, ∞)) (F3). Fidelity: FAITHFUL ×3.
-**Interpretation.** The order of independent pass/fail cut-offs cannot change a survivor set (F1), so a
-"wrong order" objection holds only where a gate's observable is invalid on some inputs — which `-02`/`-05` show for
-sTDA on salts. The cross-convention "robust" set is defined exactly and may be empty (F2). Green's FF is a valid
-fill factor on the physical range (F3). These are statements about the screen's logic, not about any number.
-**Verified against.** `lake build` re-run locally (gate PASS) + independent fidelity read (kiro-cli).
-**Caveats.** Not covered: duplicate cut-offs (harmless, unstated), infinite convention families, FF for v < 0,
-non-emptiness of the robust set (false in general). Numerics are never "formally verified" (rule 16).
-**Claim link.** C9.
+## L-2026-10-18-10 — ROTATED → `outputs/analysis/archive/ledger-2026-10.md` (Lean F1-F3 machine-checked, FAITHFUL). Verified against: see archived entry.
 
 ## L-2026-10-18-11 — Full calibrated cascade (donor vs PCBM): 37 survivors, pentacene admitted, 9168 removed
 
@@ -238,27 +223,7 @@ to the KS gap plus calibration; std2 is useful as an uncalibrated cross-check ti
 S1 is the lowest state regardless of brightness; std2 shares B3LYP with the KS gap, so the two are not independent.
 **Claim link.** C10 (answered), C3.
 
-## L-2026-10-18-15 — Basis vs geometry vs class in the KS offset (answers the kiro critique of -07)
-
-**Method.** B3LYP/def2-SVP RKS single points (PySCF, `ks_gap_check.py`, BASIS=def2-svp) on the RDKit/UFF geometries of
-naphthalene, anthracene, tetracene, pentacene; compared with the same molecules' B3LYP/6-31G* values on UFF (`-03`:
-pentacene), on B3LYP-optimised geometry (`-09`: pentacene), PubChemQC stored values, and experimental bright La
-energies (Malloci 2007 midpoints). → `outputs/extract/acene-def2svp.txt`.
-**Verified against.** Raw PySCF output lines in `acene-def2svp.txt` (all SCF converged); PubChemQC values from
-`ks_vs_stda_joined.csv`; pentacene 6-31G* values from `ks-gap-recheck-9168.txt` and `b3lyp-reopt/8671.log`.
-**Result.** Pentacene B3LYP gap [eV]: def2-SVP/UFF 1.884 · 6-31G*/UFF 1.896 · 6-31G*/B3LYP-opt 2.209 · PubChemQC
-2.397 · exp La 2.12–2.31. KS − exp (bright La midpoint), def2-SVP/UFF: naphthalene +0.087, anthracene −0.113,
-tetracene −0.229, pentacene −0.331 (mean −0.147, SD 0.179); PubChemQC 6-31G*: +0.459, +0.349, +0.271, +0.182.
-**Interpretation.** At fixed geometry the basis set moves the gap by 0.01 eV, so the def2-SVP (HOPV) vs 6-31G*
-(PubChemQC) difference cannot explain any of the offsets in -06/-07. Geometry does: UFF lowers the acene gaps by
-0.3–0.5 eV relative to DFT geometries. On DFT-quality geometries the KS offset is −0.01 (pentacene, own optimisation)
-to +0.46 eV (PubChemQC acenes) and +0.29 eV for HOPV D–A molecules — a modest class dependence for KS. For sTDA-xTB the
-class contrast survives the geometry correction (acenes ≈ 0 on UFF, i.e. ≈ +0.25 on DFT geometries, vs +0.76 for D–A
-on DFT geometries), so -07's conclusion that the cheap excited-state observable carries the larger class-dependent
-bias stands, with its magnitude reduced from ~0.9 to ~0.5 eV.
-**Caveats.** n = 4 acenes; the +0.25 eV UFF→DFT shift for sTDA-xTB on acenes is inferred from the D–A value
-(`-06`: +0.245 ± 0.183), not computed on acenes; PubChemQC geometry not on disk.
-**Claim link.** C2 (magnitude revised to ~0.5 eV), C3.
+## L-2026-10-18-15 — ROTATED → `outputs/analysis/archive/ledger-2026-10.md` (basis vs geometry vs class in the KS offset). Verified against: see archived entry.
 
 ## L-2026-10-18-16 — ROTATED → `outputs/analysis/archive/ledger-2026-10.md` (codex independent re-implementation of the -11 cascade: MATCH (12919 PCE +0.0014 pt)). Verified against: see archived entry.
 
@@ -338,40 +303,9 @@ PubChemQC documents PM6 optimisations that end on a structure different from the
 **Caveats.** The PM6 geometries themselves are not on disk, so the mechanism is inferred, not shown, for 9168.
 **Claim link.** C5, C6 (mechanism), Methods (data source).
 
-## L-2026-10-18-21 — Methods reproducibility check (codex): 80 match, 5 mismatches fixed, 10 not-found resolved
+## L-2026-10-18-21 — ROTATED → `outputs/analysis/archive/ledger-2026-10.md` (codex Methods check, 5 mismatches fixed). Verified against: see archived entry.
 
-**Method.** codex (effort high, detached) traced each Methods statement to code, logs or data
-(`outputs/cli-agent/L2-codex-methods-check.md`, 95 checks). Each non-match was re-checked here on the files.
-**Verified against.** `NTO_and_related_study/data/failed_xyz_generation.csv` (12 rows), `still_failed_xyz.csv` (10),
-`scripts/00b_retry_failed_xyz.py` (seeds 42/123/456/789/2024, UFF ≤ 500 steps), HOPV15 file (1–20 conformers per
-entry), `applicability.py` (`<=`), `filter_genuine_osc.py` (unparsable SMILES rejected).
-**Result.** Fixed in the text: HOPV15 conformer 1 used (not "one conformer"); 12 embedding failures, 2 recovered by the
-retry protocol, 10 without structure; domain test "at or below"; efficiencies are model estimates, not thermodynamic
-bounds; unparsable SMILES (1) listed as a G0 rule; deposit sentence made conditional on the Data Availability Statement.
-Missing evidence now archived: `outputs/extract/pentacene-fullTDA-validation.txt` (raw run output),
-`malloci2007-La.txt` (transcribed values), `tool-versions.txt`.
-**Interpretation.** No reported number changes; the Methods now describe exactly what the code did, including the
-retry path the first draft omitted. Two items remain open before submission: the new scripts and ledger must be added to
-the GitHub/Zenodo deposit, and the Supporting Information (Lean statements, survivor list) must be written.
-**Caveats.** Malloci values were read from the arXiv PDF tables; the published version was not compared line by line.
-**Claim link.** Methods (all subsections).
-
-## L-2026-10-18-22 — CORRECTION from the independent recompute of the Results (copilot): one wrong count, three wordings
-
-**Method.** copilot (gpt-5.4, effort high, detached) recomputed every number of `sections/results.tex` from the data
-(`outputs/cli-agent/L2-copilot-results-numbers.md`, 30 rows); each disagreement re-derived here from
-`ks_vs_stda_joined.csv` and `applicability.csv`.
-**Verified against.** `ks_vs_stda_joined.csv` (direct counts; Fisher/Holm re-run), `applicability.csv`.
-**Result.** (i) Of the 33 KS-window molecules, **17** (not 15, as written in -02) have S1 < 1 eV; all 17 also have S1 < KS
-(20 have S1 < KS). (ii) Holm-adjusted p for "any halogen (F, Cl, Br, I) present", four subsets, n = 15,952: 0.11, 0.794,
-1.48e-12, 7.1e-127 — confirms -12; a different halogen definition (copilot: Cl/F, other universe) gives 0.16, so the
-definition is now stated in the text. (iii) The window shift of -08/-12 used the LOO MAE (0.097 eV) and RMSE (0.115 eV),
-not a standard deviation. (iv) Median 24 heavy atoms refers to all 37 survivors (the 27 outside the domain: 22).
-**Interpretation.** One count in -02 was wrong by two and is superseded here; no conclusion changes. The other three are
-wording errors in the draft, corrected in the text. This is the first error the ledger itself carried into the
-manuscript and the reason checks recompute from data rather than reread the ledger (rule 18).
-**Caveats.** None beyond the entries cited.
-**Claim link.** C1 (count), C4, C7, C12 (wording). Supersedes the "15" in -02.
+## L-2026-10-18-22 — ROTATED → `outputs/analysis/archive/ledger-2026-10.md` (copilot Results recompute, one count error (17 not 15)). Verified against: see archived entry.
 
 ## L-2026-10-18-23 — CORRECTION from the independent SI check (codex): chlorine classes, naphthalene midpoint, window-shift label, order wording
 
@@ -394,3 +328,43 @@ gate's presence is what matters), and "std2 within published accuracy" (Methods 
 sTDA-xTB class contrast (~0.5 eV, -15) is an inference, not a calculation, and is no longer stated as a number.
 **Caveats.** Bootstrap upper bound 0.091 (seed 2026, 10⁴) vs 0.090 (codex, 2×10⁵): Monte-Carlo variation, kept.
 **Claim link.** C7 (salts), C9 (F1 wording), C10, C12 (acene MAE 0.40).
+
+## L-2026-10-18-24 — L3 verification of the death-angle queue (A4, A6) and of the checkers' findings (codex, copilot)
+
+**Method.** Direct computation on `gate_cascade.csv` (+ `pipeline/scharber_recompute.py` AM1.5G J_SC, FF 0.65) for A6 →
+`outputs/extract/window-redundancy.txt`; SMILES read for A4; `record-validity-result.csv` recounted (signed and absolute
+deviation); Crossref API for every DOI a CLI returned; `applicability.py:60` read for the background-sample definition.
+**Verified against.** the CSVs above and the script line cited (primary data), not the checkers' summaries.
+**Result.** (A6) Without the window the cascade (G0, G1, G3, G4) keeps 10,153 molecules; the window keeps 37. Of the 37 the
+PCE range is 1.86–10.14 %; **566 molecules with PCE ≥ 1.86 % lie outside the window** (31 with PCE ≥ 5 %, E_opt 2.23–2.58 eV,
+max 8.34 %), and only 18 of the 37 highest-PCE molecules without a window sit inside it. (A4) The top PCE survivors 17574
+(10.14 %), 22936, 22916 are sulfonated amino-anthraquinones (acid dyes); 12919 and 12913 are nitroso/azo-quinone
+structures. (Record check) `record-validity-summary.txt` prints a two-sided count (23/29 flag, 8/29 control, |dev| > 0.5 eV);
+the signed criterion used in the text (recomputed − stored > +0.5 eV) gives 21/29 and 0/29, p 1.28e-9, reproduced; the 8
+controls are all *negative* deviations (UFF geometry lowers gaps). (Priors) Pyzer-Knapp 2016, Lopez 2017, Zhao 2021, Greenstein
+2023, Omar 2022 resolve in Crossref with matching titles/authors. (Mislabel) `applicability.py:60` draws the 2,000 background records from single-fragment records, not from G0-valid ones.
+**Interpretation.** The window is not redundant with the Scharber efficiency: it is the dominant selection step, it excludes
+hundreds of molecules with equal or higher model PCE, and its edge at 2.2 eV is a convention, so "37 survivors" is a property of
+that convention (already stated with the ±25 % calibration range in `-12`; the exclusion of higher-PCE molecules is new and goes to
+SI S5). The best three survivors being dyes confirms that the cascade removes record errors, not chemistry that a chemist would
+reject; the text now says so. The flag precision stands; only the summary file's two-sided wording differs and is not quoted.
+**Caveats.** A6 uses the strict convention and the calibrated optical gap; PCE is a model upper bound. A4 availability of the dyes
+was not looked up (off the central question). Prior-art search by codex is bounded, not proof of absence.
+**Claim link.** C4, C11 (wording), novelty card (P4 Pyzer-Knapp 2016 added), SI S5.
+
+## L-2026-10-18-25 — L3 corrections applied to the manuscript (checker findings verified before use)
+
+**Method.** Each finding of `outputs/cli-agent/L3-*.md` re-checked against the manuscript line and the data; accepted or rejected below.
+**Verified against.** `main.tex`, `sections/*.tex`, `cover_letter.tex` (lines quoted in `outputs/critical-reviews/L3-findings.md`); abstract
+word count recomputed (193 words with hyphenated compounds as one word, 200 with en-dashes split).
+**Result.** Applied: abstract names what is new and scopes the negative result ("for the classes and block tested"); 'every
+observable about 0.1 eV' → '0.09–0.15 eV'; 'close to exact/nearly exact' → 'accurate' for the four acenes; 'before any chemistry
+enters' removed; 1,506 records without spectra stated in the Discussion; figure caption 'within 0.1 eV' → LOO MAE and '2,000 valid
+records' → 'single-fragment records'; Pyzer-Knapp 2016 (+ Lopez 2017, Omar 2022) cited in the Introduction; dye wording; cover
+letter 'every high-throughput screen' and the categorical 'no' scoped. Rejected: copilot's '202-word abstract' (recount 193–200,
+within the 200 limit); kiro's quote 'Three elements are new' located in the *abstract* (it is in the Introduction, line 44 —
+the checker mis-attributed it; the abstract now carries the statement); kiro-cli overclaim pass void (monthly quota) and re-run on copilot.
+**Interpretation.** The triple-read reviewer FAIL was right in substance: the abstract did not state what is new. Two checker
+errors (word count, quote location) were caught only because each finding was re-opened against the file (rule 18).
+**Caveats.** The attrition 39 → 34 HOPV molecules (3 DSSC, 2 UFF embed failures) was not stated; now in Results 2.2 (recount from hopv15_records.csv + hopv15_stda.csv).
+**Claim link.** Abstract, Introduction, Discussion, Results 2.1/2.2/2.5, Fig. 5 caption, cover letter.

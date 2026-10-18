@@ -1,0 +1,9 @@
+A6 window redundancy (gate_cascade.csv, strict convention, FF 0.65); no-window = G0,G1,G3,G4 only
+no-window survivors 10153 windowed 37
+window survivors PCE min/median/max 1.86 5.52 10.14
+PCE>=1.86: no-window 602 | in window 36 | outside window 566
+PCE>=3: no-window 257 | in window 33 | outside window 224
+PCE>=5: no-window 52 | in window 21 | outside window 31
+PCE>=8: no-window 10 | in window 9 | outside window 1
+outside-window PCE>=5% eg_opt range 2.225 2.583 max PCE 8.34
+top 37 by PCE without window: share inside window 18
