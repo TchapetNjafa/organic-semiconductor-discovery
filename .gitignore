@@ -108,3 +108,13 @@ Thumbs.db
 *.temp
 *.bak
 *.backup
+
+# Paper data and run outputs are part of the deposit: keep them tracked despite the generic rules above
+!ZENODO_UPLOAD/*.csv
+!Paper1_AdvTheorySimul/pipeline/data/*.csv
+!outputs/**/*.csv
+!outputs/**/*.log
+!outputs/**/*.out
+!Paper1_AdvTheorySimul/manuscript/si/*.pdf
+# Local-only material never published
+Archives/local_untracked_csv/
