@@ -1,0 +1,13 @@
+HOPV KS calibration (n=34): Eopt = 0.681*KS + 0.391
+validity rejects: {'R3_no_ring': 4034, 'R4_no_aromatic_ring': 2289, 'R1_multifragment': 838, 'R6_low_conjugation': 70, 'R5_too_small': 9, 'R2_metal': 2, 'unparsable': 1}
+valid 10215 / 17458
+KS raw                 window-in all    41 | valid    13
+KS calibrated (HOPV)   window-in all    98 | valid    46
+S1 raw                 window-in all   559 | valid   391
+valid: GAP(eV) vs ks_cal: both 13 | only first 0 | only second 33
+valid: GAP(eV) vs E_S1_eV: both 3 | only first 10 | only second 388
+valid: ks_cal vs E_S1_eV: both 28 | only first 18 | only second 363
+pentacene  KS 2.397 KS_cal 2.023 S1 2.228 valid=True
+tetracene  KS 2.931 KS_cal 2.387 S1 2.608 valid=True
+anthracene KS 3.709 KS_cal 2.917 S1 3.236 valid=True
+9168       KS 1.771 KS_cal 1.597 S1 3.441 valid=True

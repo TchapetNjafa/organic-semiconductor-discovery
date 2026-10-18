@@ -1,0 +1,13 @@
+HOPV calibration set n=34, distinct source papers (DOI) = 10; largest paper group = 12
+gap_b3lyp_eV  leave-one-paper-out MAE 0.102 (max 0.331) | LOO-molecule MAE 0.086 | n=34
+E_S1_eV       leave-one-paper-out MAE 0.105 (max 0.307) | LOO-molecule MAE 0.097 | n=34
+S1_stda       leave-one-paper-out MAE 0.168 (max 0.550) | LOO-molecule MAE 0.146 | n=34
+
+external class (acenes, bright La exp midpoints, Malloci 2007); calibration E_opt = 0.681 KS + 0.391
+naphthalene exp 4.450 | KS raw 4.909 (+0.459) | KS calibrated 3.734 (-0.716) | S1 sTDA-xTB 4.141 (-0.309)
+anthracene  exp 3.360 | KS raw 3.709 (+0.349) | KS calibrated 2.917 (-0.443) | S1 sTDA-xTB 3.236 (-0.124)
+tetracene   exp 2.660 | KS raw 2.931 (+0.271) | KS calibrated 2.387 (-0.273) | S1 sTDA-xTB 2.608 (-0.052)
+pentacene   exp 2.215 | KS raw 2.397 (+0.182) | KS calibrated 2.023 (-0.192) | S1 sTDA-xTB 2.228 (+0.013)
+KS raw                 MAE 0.315 bias +0.315
+KS calibrated (HOPV)   MAE 0.406 bias -0.406
+S1 sTDA-xTB raw        MAE 0.125 bias -0.118

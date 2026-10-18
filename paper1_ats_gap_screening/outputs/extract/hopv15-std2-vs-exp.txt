@@ -1,0 +1,12 @@
+n with exp gap and std2: 36
+KS B3LYP/def2-SVP (HOPV)     n=36 bias=+0.288 MAE=0.288 SD=0.155 r=0.921 raw-window recall 23/31 LOO-MAE 0.083
+sTDA@B3LYP/6-31G* (std2)     n=36 bias=-0.021 MAE=0.211 SD=0.256 r=0.747 raw-window recall 28/31 LOO-MAE 0.141
+XsTDA@B3LYP/6-31G* (std2)    n=36 bias=+0.237 MAE=0.247 SD=0.289 r=0.692 raw-window recall 23/31 LOO-MAE 0.157
+sTDA-xTB DFT geom            n=36 bias=+0.758 MAE=0.758 SD=0.121 r=0.891 raw-window recall 0/31 LOO-MAE 0.103
+sTDA-xTB UFF geom            n=34 bias=+0.999 MAE=0.999 SD=0.126 r=0.907 raw-window recall 1/29 LOO-MAE 0.097
+
+complete-case n=34; raw |error| and LOO |error| paired vs KS (95% bootstrap CI)
+S1_stda          raw MAE diff -0.082 [-0.138,-0.030] | LOO diff +0.060 [+0.031,+0.091]
+S1_xstda         raw MAE diff -0.035 [-0.098,+0.037] | LOO diff +0.076 [+0.046,+0.109]
+E_S1_dftgeom_eV  raw MAE diff +0.461 [+0.397,+0.522] | LOO diff +0.019 [-0.004,+0.041]
+E_S1_eV          raw MAE diff +0.706 [+0.632,+0.771] | LOO diff +0.011 [-0.021,+0.041]

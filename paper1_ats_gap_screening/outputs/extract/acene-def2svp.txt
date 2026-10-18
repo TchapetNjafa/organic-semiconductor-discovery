@@ -1,0 +1,11 @@
+/home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/NTO_and_related_study/data/xtb_results/931/mol.xyz	converged=True	HOMO=-5.893	LUMO=-1.356	GAP=4.537 eV	E(T1)-E(S0)=nan eV
+/home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/NTO_and_related_study/data/xtb_results/8418/mol.xyz	converged=True	HOMO=-5.281	LUMO=-2.035	GAP=3.247 eV	E(T1)-E(S0)=nan eV
+/home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/NTO_and_related_study/data/xtb_results/7080/mol.xyz	converged=True	HOMO=-4.897	LUMO=-2.466	GAP=2.431 eV	E(T1)-E(S0)=nan eV
+/home/tchapet/Post-Doc/ARTICLES-DOSSIERS-DES-ARTICLES-EN-REDACTION/NOUVELS-AXES-DE-RECHERCHE-A-REGARDER-URGEMMENT/ARTICLES-EN-REDACTIONS/ARTICLE_MVOTO/NTO_and_related_study/data/xtb_results/8671/mol.xyz	converged=True	HOMO=-4.639	LUMO=-2.755	GAP=1.884 eV	E(T1)-E(S0)=nan eV
+
+# id name | def2-SVP(UFF) | 6-31G*(PubChemQC) | exp mid (bright La) | off def2 | off 6-31G*
+931 naphthalene | 4.537 | 4.909 | 4.450 | +0.087 | +0.459
+8418 anthracene  | 3.247 | 3.709 | 3.360 | -0.113 | +0.349
+7080 tetracene   | 2.431 | 2.931 | 2.660 | -0.229 | +0.271
+8671 pentacene   | 1.884 | 2.397 | 2.215 | -0.331 | +0.182
+mean KS offset def2-SVP(UFF) -0.147 (sd 0.179); HOPV D-A KS(def2-SVP) offset +0.288

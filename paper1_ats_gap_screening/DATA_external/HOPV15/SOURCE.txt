@@ -1,0 +1,5 @@
+source: https://doi.org/10.6084/m9.figshare.1610063.v4
+licence: CC BY 4.0
+cite: Lopez et al., Sci. Data 3, 160086 (2016), 10.1038/sdata.2016.86
+md5: 14d9bab7b5a8990834c1f6a9dab22f7b
+retrieved: 2026-10-17
